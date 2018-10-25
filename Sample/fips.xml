@@ -1,0 +1,22 @@
+<fips>
+     <state fips="17" name="ILLINOIS">
+         <city fips="57381" name="PALOS HEIGHTS"/>
+         <city fips="35307" name="HINSDALE"/>
+         <city fips="20149" name="DIXMOOR"/>
+         <city fips="84090" name="YOUNGSDALE"/>
+         <city fips="14000" name="CHICAGO"/>
+         <city fips="70629" name="SOUTH CHICAGO HEIGHTS"/>
+     </state>
+     <state fips="18" name="INDIANA">
+         <city fips="1810" name="ANTIOCH"/>
+         <city fips="36000" name="INDIANAPOLIS"/>
+         <city fips="5050" name="BETHEL VILLAGE"/>
+         <city fips="17740" name="DENHAM"/>
+     </state>
+     <state fips="26" name="MICHIGAN">
+         <city fips="74010" name="SIMMONS"/>
+         <city fips="22000" name="DETROIT"/>
+         <city fips="43180" name="KINCHELOE"/>
+         <city fips="73260" name="SHERMAN TWP"/>
+     </state>
+ </fips>

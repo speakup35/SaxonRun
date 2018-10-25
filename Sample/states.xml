@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<states>
+ <state><abbr>CO</abbr><name>Colorado</name></state>
+ <!-- etc. -->
+ <state><abbr>CT</abbr><name>Connecticut</name></state>
+ <!-- etc. -->
+ <state><abbr>ID</abbr><name>Idaho</name></state>
+ <!-- etc. -->
+ <state><abbr>NJ</abbr><name>New Jersey</name></state>
+ <!-- etc. -->
+</states>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<labels>
+ <label>
+ <name>Thomas Eliot</name>
+ <address>
+ <street>3 Prufrock Lane</street>
+ <city>Hartford</city>
+ <state>CT</state>
+ </address>
+ </label>
+ <label>
+ <name>Ezra Pound</name>
+ <address>
+ <street>45 Usura Place</street>
+ <city>Hailey</city>
+ <state>ID</state>
+ </address>
+ </label>
+ <label>
+ <name>William Williams</name>
+ <address>
+ <street>100 Wheelbarrow Blvd</street>
+ <city>Patterson</city>
+ <state>NJ</state>
+ </address>
+ </label>
+</labels>

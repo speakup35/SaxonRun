@@ -1,0 +1,1581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE reference
+  PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference id="call_home_events" xml:lang="en">
+   <title>CMM events that automatically notify Support</title>
+   <shortdesc>You can configure the IBM Flex System Manager or the CMM to automatically notify Support (also known as <term>call home</term>) if certain types of errors are encountered. If you have configured this function, see the table for a list of events that automatically notify Support.</shortdesc>
+   <refbody>
+      <table id="call_home_events_t1">
+         <title>Events that automatically notify Support</title>
+         <tgroup cols="3">
+            <colspec colname="col1" colwidth="2*"/>
+            <colspec colname="col2" colwidth="3*"/>
+            <colspec colname="col3" colwidth="*"/>
+            <thead>
+               <row valign="bottom">
+                  <entry colname="col1">Event ID</entry>
+                  <entry colname="col2">Message String</entry>
+                  <entry colname="col3">Automatically Notify Support</entry>
+               </row>
+            </thead>
+            <tbody>
+               <row>
+                  <entry colname="col1">00006011</entry>
+                  <entry colname="col2">The battery in Chassis Management Module [arg1] is low.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006012</entry>
+                  <entry colname="col2">The battery in Chassis Management Module [arg1] is low.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006120</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006121</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006122</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006123</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006124</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006125</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006126</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006220</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006221</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006222</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006223</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006224</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006225</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00006226</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] failure. FPGA Host [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00016802</entry>
+                  <entry colname="col2">Test call home by user ID [arg1] from [arg2] at IP address [arg3].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00016803</entry>
+                  <entry colname="col2">Manual call home generated by user ID [arg1] from [arg2] at IP address [arg3]. Message: [arg4].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00017104</entry>
+                  <entry colname="col2">CMM bay location cannot be determined, defaulting to CMM bay 2.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00022003</entry>
+                  <entry colname="col2">Primary Chassis Management Module real-time clock failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0002200A</entry>
+                  <entry colname="col2">Primary Chassis Management Module internal Ethernet logic failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00022015</entry>
+                  <entry colname="col2">Standby Chassis Management Module real-time clock failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00022016</entry>
+                  <entry colname="col2">Standby Chassis Management Module local management bus failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00022019</entry>
+                  <entry colname="col2">Standby Chassis Management Module internal I/O logic failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0002201D</entry>
+                  <entry colname="col2">Standby Chassis Management Module internal Ethernet logic failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0002201E</entry>
+                  <entry colname="col2">Standby Chassis Management Module communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0002205A</entry>
+                  <entry colname="col2">Primary Chassis Management Module internal I/O logic failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026801</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026802</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026803</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026804</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026805</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026806</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026807</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026808</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00026809</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0002680A</entry>
+                  <entry colname="col2">Fan module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038201</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overvoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038202</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overvoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038203</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overvoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038204</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overvoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038205</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overvoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038206</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overvoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038301</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading undervoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038302</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading undervoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038303</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading undervoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038304</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading undervoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038305</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading undervoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038306</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading undervoltage.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038401</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overcurrent.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038402</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overcurrent.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038403</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overcurrent.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038404</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overcurrent.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038405</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overcurrent.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038406</entry>
+                  <entry colname="col2">Power supply [arg1] transient reading overcurrent.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038501</entry>
+                  <entry colname="col2">Power supply [arg1] power meter is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038502</entry>
+                  <entry colname="col2">Power supply [arg1] power meter is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038503</entry>
+                  <entry colname="col2">Power supply [arg1] power meter is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038504</entry>
+                  <entry colname="col2">Power supply [arg1] power meter is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038505</entry>
+                  <entry colname="col2">Power supply [arg1] power meter is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038506</entry>
+                  <entry colname="col2">Power supply [arg1] power meter is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038601</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038602</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038603</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038604</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038605</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038606</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038607</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038608</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038609</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0003860A</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038701</entry>
+                  <entry colname="col2">Fan logic module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038702</entry>
+                  <entry colname="col2">Fan logic module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038A01</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038A02</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038A03</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038A04</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038A05</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038A06</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038F01</entry>
+                  <entry colname="col2">Internal proprietary management protocol between I/O module [arg1] and CMM is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038F02</entry>
+                  <entry colname="col2">Internal proprietary management protocol between I/O module [arg1] and CMM is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038F03</entry>
+                  <entry colname="col2">Internal proprietary management protocol between I/O module [arg1] and CMM is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00038F04</entry>
+                  <entry colname="col2">Internal proprietary management protocol between I/O module [arg1] and CMM is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039601</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039602</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039603</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039604</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039605</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039606</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039607</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039608</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039609</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0003960A</entry>
+                  <entry colname="col2">Fan module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039701</entry>
+                  <entry colname="col2">Fan logic module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039702</entry>
+                  <entry colname="col2">Fan logic module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039A01</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039A02</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039A03</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039A04</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039A05</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039A06</entry>
+                  <entry colname="col2">Power supply [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B01</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B02</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B03</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B04</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B05</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B06</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B07</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B08</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B09</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">00039B0A</entry>
+                  <entry colname="col2">Fan module [arg1] fan parameter in VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A2101</entry>
+                  <entry colname="col2">Fan logic module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A2102</entry>
+                  <entry colname="col2">Fan logic module [arg1] has failed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A2201</entry>
+                  <entry colname="col2">Fan logic module [arg1] is an older revision card (FRU 81Y2912) and needs to be replaced.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A2202</entry>
+                  <entry colname="col2">Fan logic module [arg1] is an older revision card (FRU 81Y2912) and needs to be replaced.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6001</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6002</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6003</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6004</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6005</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6006</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6007</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6008</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A6009</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">000A600A</entry>
+                  <entry colname="col2">Fan module [arg1] is operating in a degraded state.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08028001</entry>
+                  <entry colname="col2">Power supply [arg1] is off. DC fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08028002</entry>
+                  <entry colname="col2">Power supply [arg1] is off. DC fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08028003</entry>
+                  <entry colname="col2">Power supply [arg1] is off. DC fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08028004</entry>
+                  <entry colname="col2">Power supply [arg1] is off. DC fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08028005</entry>
+                  <entry colname="col2">Power supply [arg1] is off. DC fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08028006</entry>
+                  <entry colname="col2">Power supply [arg1] is off. DC fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08200001</entry>
+                  <entry colname="col2">Power supply [arg1] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08200002</entry>
+                  <entry colname="col2">Power supply [arg1] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08200003</entry>
+                  <entry colname="col2">Power supply [arg1] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08200004</entry>
+                  <entry colname="col2">Power supply [arg1] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08200005</entry>
+                  <entry colname="col2">Power supply [arg1] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08200006</entry>
+                  <entry colname="col2">Power supply [arg1] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08216301</entry>
+                  <entry colname="col2">Mismatched power supplies in the chassis: [arg1]. The configuration is not supported.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236001</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overcurrent fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236002</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overcurrent fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236003</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overcurrent fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236004</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overcurrent fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236005</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overcurrent fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236006</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overcurrent fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236481</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overvoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236482</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overvoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236483</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overvoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236484</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overvoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236485</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overvoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236486</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an overvoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236801</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an undervoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236802</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an undervoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236803</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an undervoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236804</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an undervoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236805</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an undervoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08236806</entry>
+                  <entry colname="col2">Power supply [arg1] has shut down because of an undervoltage fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08526001</entry>
+                  <entry colname="col2">Power supply [arg1] encountered an internal fan failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08526002</entry>
+                  <entry colname="col2">Power supply [arg1] encountered an internal fan failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08526003</entry>
+                  <entry colname="col2">Power supply [arg1] encountered an internal fan failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08526004</entry>
+                  <entry colname="col2">Power supply [arg1] encountered an internal fan failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08526005</entry>
+                  <entry colname="col2">Power supply [arg1] encountered an internal fan failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08526006</entry>
+                  <entry colname="col2">Power supply [arg1] encountered an internal fan failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08556001</entry>
+                  <entry colname="col2">An internal fan in power supply [arg1] is operating outside the recommended speed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08556002</entry>
+                  <entry colname="col2">An internal fan in power supply [arg1] is operating outside the recommended speed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08556003</entry>
+                  <entry colname="col2">An internal fan in power supply [arg1] is operating outside the recommended speed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08556004</entry>
+                  <entry colname="col2">An internal fan in power supply [arg1] is operating outside the recommended speed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08556005</entry>
+                  <entry colname="col2">An internal fan in power supply [arg1] is operating outside the recommended speed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">08556006</entry>
+                  <entry colname="col2">An internal fan in power supply [arg1] is operating outside the recommended speed.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0901E000</entry>
+                  <entry colname="col2">Chassis front LED card not present.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0901E003</entry>
+                  <entry colname="col2">Chassis rear LED card not present.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010001</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010002</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010003</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010004</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010005</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010006</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010007</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010008</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E010009</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E01000A</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E01000B</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E01000C</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E01000D</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0E01000E</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA00001</entry>
+                  <entry colname="col2">I/O module [arg1] fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA00002</entry>
+                  <entry colname="col2">I/O module [arg1] fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA00003</entry>
+                  <entry colname="col2">I/O module [arg1] fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA00004</entry>
+                  <entry colname="col2">I/O module [arg1] fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1A401</entry>
+                  <entry colname="col2">I/O module [arg1] current fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1A402</entry>
+                  <entry colname="col2">I/O module [arg1] current fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1A403</entry>
+                  <entry colname="col2">I/O module [arg1] current fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1A404</entry>
+                  <entry colname="col2">I/O module [arg1] current fault.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1F801</entry>
+                  <entry colname="col2">I/O module [arg1] communication failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1F802</entry>
+                  <entry colname="col2">I/O module [arg1] communication failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1F803</entry>
+                  <entry colname="col2">I/O module [arg1] communication failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA1F804</entry>
+                  <entry colname="col2">I/O module [arg1] communication failure.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA2D001</entry>
+                  <entry colname="col2">The internal proprietary management credentials for [arg1] are incorrect with error code: [arg2].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA2D002</entry>
+                  <entry colname="col2">The internal proprietary management credentials for [arg1] are incorrect with error code: [arg2].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA2D003</entry>
+                  <entry colname="col2">The internal proprietary management credentials for [arg1] are incorrect with error code: [arg2].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">0EA2D004</entry>
+                  <entry colname="col2">The internal proprietary management credentials for [arg1] are incorrect with error code: [arg2].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010481</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010482</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010483</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010484</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010485</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010486</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010487</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010488</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010489</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501048A</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501048B</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501048C</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501048D</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501048E</entry>
+                  <entry colname="col2">Node [arg1] device [arg2][[arg3]] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010801</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010802</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010803</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010804</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010805</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010806</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010807</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010808</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010809</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501080A</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501080B</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501080C</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501080D</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501080E</entry>
+                  <entry colname="col2">Unexpected exception affecting [arg1] was encountered in security service.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010841</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010842</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010843</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010844</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010845</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010846</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010847</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010848</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010849</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501084A</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501084B</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501084C</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501084D</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">3501084E</entry>
+                  <entry colname="col2">Unexpected exception was encountered in security service or system-management processor on [arg1].</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">35010A00</entry>
+                  <entry colname="col2">Chassis Management Module configuration is not compliant with the security policy.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">4001711E</entry>
+                  <entry colname="col2">Standby Chassis Management Module failed to synchronize with the primary CMM. Standby network interface is disabled.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040000</entry>
+                  <entry colname="col2">Chassis VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040001</entry>
+                  <entry colname="col2">Chassis VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040101</entry>
+                  <entry colname="col2">I/O module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040102</entry>
+                  <entry colname="col2">I/O module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040103</entry>
+                  <entry colname="col2">I/O module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040104</entry>
+                  <entry colname="col2">I/O module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040201</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040202</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] VPD is not valid.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040401</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040402</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] VPD is not available.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040501</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] is not compatible. Redundant capability is turned off.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">40040502</entry>
+                  <entry colname="col2">Chassis Management Module [arg1] is not compatible. Redundant capability is turned off.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020000</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Chassis Management Module in the chassis [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020101</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. The rear LED card in the chassis [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020102</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. The rear LED card in the chassis [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020201</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan logic module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020202</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan logic module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020281</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan logic module [arg2] VPD communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020282</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan logic module [arg2] VPD communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020301</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. I/O module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020302</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. I/O module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020303</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. I/O module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020304</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. I/O module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020401</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020402</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020403</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020404</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020405</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020406</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020407</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020408</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020409</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002040A</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Fan module [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020501</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Power supply [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020502</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Power supply [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020503</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Power supply [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020504</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Power supply [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020505</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Power supply [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020506</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Power supply [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020601</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020602</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020603</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020604</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020605</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020606</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020607</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020608</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020609</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002060A</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002060B</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002060C</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002060D</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002060E</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020701</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020702</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020703</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020704</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020705</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020706</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020707</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020708</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">50020709</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002070A</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002070B</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002070C</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002070D</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+               <row>
+                  <entry colname="col1">5002070E</entry>
+                  <entry colname="col2">Not reading device on system management (I2C) bus [arg1]. Node [arg2] communication is offline.</entry>
+                  <entry colname="col3">Yes</entry>
+               </row>
+            </tbody>
+         </tgroup>
+      </table>
+   </refbody>
+</reference>
