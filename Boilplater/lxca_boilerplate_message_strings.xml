@@ -1,0 +1,483 @@
+﻿<!-- The following language codes are used in the properties files names that are provided by the development team. 
+For consistency, the same codes are used in this XML.
+  - en      English
+  - de      German
+  - es      Spanish
+  - fr      French
+  - it      Italian
+  - ja      Japanese
+  - ko      Korean
+  - pt      Brazilian Portuguese
+  - ru      Russian
+  - th      Thai
+  - zh      Simplified Chinese
+  - zh_HANT Traditional Chinese
+-->
+
+<auto_message_text>
+
+   <value_yes>
+      <en>Yes</en>	                          
+      <de>Ja</de>
+      <es>Sí</es>
+      <fr>Oui</fr>
+      <it>Sì</it>
+      <ja>はい</ja>
+      <ko>예</ko>
+      <pt>Sim</pt>
+      <ru>Да</ru>
+      <th>ใช่</th>
+      <zh>是</zh>
+      <zh_HANT>是</zh_HANT>
+   </value_yes>
+
+   <value_no>
+      <en>No</en>	                          
+      <de>Es werden keine</de>
+      <es>No</es>
+      <fr>Non</fr>
+      <it>No</it>
+      <ja>いいえ</ja>
+      <ko>아니요</ko>
+      <pt>Não</pt>
+      <ru>Нет</ru>
+      <th>ไม่</th>
+      <zh>否</zh>
+      <zh_HANT>否</zh_HANT>
+   </value_no>
+
+
+   <severity_info>
+      <en>Informational</en>	                          
+      <de>Information</de>
+      <es>Informativo</es>
+      <fr>Information</fr>
+      <it>Informativo</it>
+      <ja>通知</ja>
+      <ko>정보</ko>
+      <pt>Informativo</pt>
+      <ru>Информационное оповещение</ru>
+      <th>ให้ข้อมูล</th>
+      <zh>参考</zh>
+      <zh_HANT>參考資訊</zh_HANT>
+   </severity_info>
+
+   <severity_warn>
+      <en>Warning</en>	                          
+      <de>Warnung</de>
+      <es>Advertencia</es>
+      <fr>Avertissement</fr>
+      <it>Avvertenza</it>
+      <ja>警告</ja>
+      <ko>경고</ko>
+      <pt>Aviso</pt>
+      <ru>Предупреждение</ru>
+      <th>คำเตือน</th>
+      <zh>警告</zh>
+      <zh_HANT>警告</zh_HANT>
+   </severity_warn>
+
+   <severity_error>
+      <en>Error</en>	                          
+      <de>Fehler</de>
+      <es>Error</es>
+      <fr>Erreur</fr>
+      <it>Errore</it>
+      <ja>エラー</ja>
+      <ko>오류</ko>
+      <pt>Erro</pt>
+      <ru>Ошибка</ru>
+      <th>ข้อผิดพลาด</th>
+      <zh>错误</zh>
+      <zh_HANT>錯誤</zh_HANT>
+   </severity_error>
+
+
+
+   <Arguments>
+      <en>Arguments</en>	                          
+      <de>Argumente</de>
+      <es>Argumentos</es>
+      <fr>Arguments</fr>
+      <it>Argomenti</it>
+      <ja>引数</ja>
+      <ko>인수</ko>
+      <pt>Argumentos</pt>
+      <ru>Аргументы</ru>
+      <th>อาร์กิวเมนต์</th>
+      <zh>参数</zh>
+      <zh_HANT>引數</zh_HANT>
+   </Arguments>
+	
+   <internal_events>
+      <en>Internal Event</en>
+      <de>Internal Event</de>
+      <es>Internal Event</es>
+      <fr>Internal Event</fr>
+      <it>Internal Event</it>
+      <ja>Internal Event</ja>
+      <ko>Internal Event</ko>
+      <pt>Internal Event</pt>
+      <ru>Internal Event</ru>
+      <th>Internal Event</th>
+      <zh>Internal Event</zh>
+      <zh_HANT>Internal Event</zh_HANT>
+   </internal_events>
+    
+   <severity>
+      <en>Severity</en>
+      <de>Dringlichkeit</de>
+      <es>Gravedad</es>
+      <fr>Gravité</fr>
+      <it>Gravità</it>
+      <ja>重大度</ja>
+      <ko>심각도</ko>
+      <pt>Severidade</pt>
+      <ru>Уровень серьезности</ru>
+      <th>ระดับความรุนแรง</th>
+      <zh>严重性</zh>
+      <zh_HANT>嚴重性</zh_HANT>
+   </severity>
+
+   <alert_category>
+      <en>Alert Category</en>
+      <de>Alertkategorie</de>
+      <es>Categoría de las alertas</es>
+      <fr>Catégorie d'alerte</fr>
+      <it>Categoria avvisi</it>
+      <ja>アラート・カテゴリー</ja>
+      <ko>경보 범주</ko>
+      <pt>Categoria do Alerta</pt>
+      <ru>Категория оповещений</ru>
+      <th>ประเภทการแจ้งเตือน</th>
+      <zh>警报类别</zh>
+      <zh_HANT>警示種類</zh_HANT>
+   </alert_category>
+
+   <serviceable>
+      <en>Serviceable</en>
+      <de>Wartungsfähig</de>
+      <es>Es reparable</es>
+      <fr>Réparable</fr>
+      <it>Manutenzione</it>
+      <ja>保守可能</ja>
+      <ko>서비스 가능</ko>
+      <pt>Permite manutenção</pt>
+      <ru>Подлежит обслуживанию</ru>
+      <th>ซ่อมบำรุงได้</th>
+      <zh>可维护</zh>
+      <zh_HANT>可維修</zh_HANT>
+   </serviceable>
+
+   <call_home>
+      <en>Automatically Notify Support</en>
+      <de>Unterstützung automatisch benachrichtigen</de>
+      <es>Notificar automáticamente al centro de soporte</es>
+      <fr>Avertir automatiquement le service de support</fr>
+      <it>Avvisa automaticamente il supporto</it>
+      <ja>自動的にサポートに通知</ja>
+      <ko>지원 자동 알림</ko>
+      <pt>Notificar o Suporte automaticamente</pt>
+      <ru>Автоматическое уведомление службы поддержки</ru>
+      <th>แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</th>
+      <zh>自动通知支持机构</zh>
+      <zh_HANT>自動通知支援中心</zh_HANT>
+   </call_home>
+
+   <response> 
+      <en>User Response</en>
+      <de>Benutzeraktion</de>
+      <es>Respuesta del usuario</es>
+      <fr>Réponse de l'utilisateur</fr>
+      <it>Risposta utente</it>
+      <ja>ユーザー応答</ja>
+      <ko>사용자 조치</ko>
+      <pt>Resposta do usuário</pt>
+      <ru>Ответ пользователя</ru>
+      <th>การตอบสนองจากผู้ใช้</th>
+      <zh>用户响应</zh>
+      <zh_HANT>使用者回應</zh_HANT>
+   </response> 
+
+   <reviewed>
+      <en>Reviewed</en>
+      <de>Reviewed</de>
+      <es>Reviewed</es>
+      <fr>Reviewed</fr>
+      <it>Reviewed</it>
+      <ja>Reviewed</ja>
+      <ko>Reviewed</ko>
+      <pt>Reviewed</pt>
+      <ru>Reviewed</ru>
+      <th>Reviewed</th>
+      <zh>Reviewed</zh>
+      <zh_HANT>Reviewed</zh_HANT>
+   </reviewed>
+
+   
+ 
+<!-- *** messages_by_severity.dita -->
+   <lxca_severity_topic_title>
+      <en>Events organized by severity</en>
+      <de>Ereignisse nach Schweregrad sortiert</de>
+      <es>Sucesos ordenados por gravedad</es>
+      <fr>Événements classés par niveau de gravité</fr>	      
+      <it>Eventi organizzati per gravità</it>
+      <ja>重大度別に整理されたイベント</ja>
+      <ko>심각도별로 구성된 이벤트</ko>
+      <pt>Eventos organizados por gravidade</pt>
+      <ru>События, классифицированные по уровню серьезности</ru>
+      <th>เหตุการณ์ที่จัดเรียงตามความร้ายแรง</th>
+      <zh>按严重性排列的事件</zh>
+      <zh_HANT>依嚴重性列出的事件</zh_HANT>
+   </lxca_severity_topic_title>
+   
+   <lxca_severity_shortdesc>
+      <en>The following table lists all Lenovo XClarity Administrator events, organized by severity (Information, Error, and Warning).</en>
+      <de>Die Folgende Tabelle führt alle <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name" ></keyword> Ereignisse nach Schweregrad sortiert auf (Information, Fehler und Warnung).</de>
+      <es>La siguiente tabla enumera todos los sucesos de <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> , ordenados por gravedad (información, error y advertencia).</es>
+      <fr>Le tableau suivant répertorie tous les événements <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> classés par niveau de gravité (Information, Erreur et Avertissement).</fr>	      
+      <it>Nella seguente tabella sono elencati tutti gli eventi <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> organizzati per gravità (informazioni, errori e avvertenze).</it>
+      <ja>以下の表はすべての <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> イベントを重大度別 (情報、エラー、警告) に整理してリストしています。</ja>
+      <ko>다음 표에서는 심각도(정보, 오류 및 경고)별로 구성된 모든 <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> 이벤트를 나열합니다.</ko>
+      <pt>A tabela a seguir lista todos os eventos do <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> , organizados por gravidade (Informação, Erro e Aviso).</pt>
+      <ru>В следующей таблице перечислены все события <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> , классифицированные по уровню серьезности (информационные, связанные с ошибками и предупреждения).</ru>
+      <th>ตารางต่อไปนี้มีเหตุการณ์ <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> ทั้งหมดที่จัดเรียงตามความร้ายแรง (ข้อมูล ข้อผิดพลาด และคำเตือน)</th>
+      <zh>以下表格列出了所有按严重性（信息、错误和警告）排列的 <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> 事件。</zh>
+      <zh_HANT>下表依嚴重性（資訊、錯誤和警告）列出所有的 <keyword conref="boilerplate_terms_not_translated.dita#boilerplate_terms_not_translated/product_name"></keyword> 事件。</zh_HANT>
+   </lxca_severity_shortdesc>
+
+   <lxca_severity_table_title>
+      <en>Events organized by severity</en>
+      <de>Ereignisse nach Schweregrad sortiert</de>
+      <es>Sucesos ordenados por gravedad</es>
+      <fr>vénements classés par niveau de gravité</fr>	      
+      <it>Eventi organizzati per gravità</it>
+      <ja>重大度別に整理されたイベント</ja>
+      <ko>심각도별로 구성된 이벤트</ko>
+      <pt>Eventos organizados por gravidade</pt>
+      <ru>События, классифицированные по уровню серьезности</ru>
+      <th>เหตุการณ์ที่จัดเรียงตามความร้ายแรง</th>
+      <zh>按严重性排列的事件</zh>
+      <zh_HANT>依嚴重性列出的事件</zh_HANT>
+   </lxca_severity_table_title>
+
+   <event_ID>
+      <en>Event ID</en>
+      <de>Ereignis-ID</de>
+      <es>ID de suceso</es>
+      <fr>ID événement</fr>	      
+      <it>ID evento</it>
+      <ja>イベント ID</ja>
+      <ko>이벤트 ID</ko>
+      <pt>ID de Evento</pt>
+      <ru>ИД события</ru>
+      <th>ID เหตุการณ์</th>
+      <zh>事件标识</zh>
+      <zh_HANT>事件 ID</zh_HANT>
+   </event_ID>
+
+   <message_string>
+      <en>Message String</en>
+      <de>Meldung</de>
+      <es>Cadena del mensaje</es>
+      <fr>Chaîne de message</fr>	      
+      <it>Stringa del messaggio</it>
+      <ja>メッセージ・ストリング</ja>
+      <ko>메시지 문자열</ko>
+      <pt>Sequência de Mensagens</pt>
+      <ru>Строка сообщения</ru>
+      <th>สตริงข้อความ</th>
+      <zh>消息字符串</zh>
+      <zh_HANT>訊息字串</zh_HANT>  
+   </message_string>
+   
+   <notify_support>
+      <en>Automatically Notify Support</en>
+      <de>Unterstützung automatisch benachrichtigen</de>
+      <es>Notificar automáticamente al centro de soporte</es>
+      <fr>Avertir automatiquement le service de support</fr>
+      <it>Avvisa automaticamente il supporto</it>
+      <ja>自動的にサポートに通知</ja>
+      <ko>지원 자동 알림</ko>
+      <pt>Notificar o Suporte automaticamente</pt>
+      <ru>Автоматическое уведомление службы поддержки</ru>
+      <th>แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</th>
+      <zh>自动通知支持机构</zh>
+      <zh_HANT>自動通知支援中心</entry>
+   </notify_support>
+
+   <callhome_table_title>
+      <en>Events that automatically notify Support</en>
+      <de>Ereignisse, durch die der Unterstützung automatisch benachrichtigt wird</de>
+      <es>Sucesos que notifican automáticamente al centro de soporte</es>
+      <fr>Événements avertissant automatiquement le service de support</fr>
+      <it>Eventi che avvisano automaticamente il supporto</it>
+      <ja>自動的にサポートに通知されるイベント</title>
+      <ko>지원 자동 알림 이벤트</ko>
+      <pt>Eventos que notificam automaticamente o Suporte</pt>
+      <ru>События, которые автоматически уведомляют службу поддержки</ru>
+      <th>เหตุการณ์ที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</th>
+      <zh>自动通知支持机构的事件</zh>
+      <zh_HANT>會自動通知支援中心的事件</zh_HANT>
+   </callhome_table_title>
+
+<!-- *** xhmc_messages_listing.dita *** -->
+   <lxca_events_topic_title>
+      <en>List of Lenovo XClarity Administrator events</en>
+      <de>Liste der Lenovo XClarity Administrator-Ereignisse</de>
+      <es>Lista de los sucesos de Lenovo XClarity Administrator</es>
+      <fr>Liste des événements Lenovo XClarity Administrator</fr>
+      <it>Elenco degli eventi di Lenovo XClarity Administrator</it>
+      <ja>Lenovo XClarity Administrator イベントのリスト</ja>
+      <ko>Lenovo XClarity Administrator 이벤트 목록</ko>
+      <pt>Lista de eventos do Lenovo XClarity Administrator</pt>
+      <ru>Список событий Lenovo XClarity Administrator</ru>
+      <th>รายการเหตุการณ์ Lenovo XClarity Administrator</th>
+      <zh>Lenovo XClarity Administrator 事件列表</zh>
+      <zh_HANT>Lenovo XClarity Administrator 事件清單</zh_HANT>
+   </lxca_events_topic_title>
+
+   <lxca_events_shortdesc>
+      <en>This section lists all Lenovo XClarity Administrator events that can be viewed in the Lenovo XClarity Administrator event log or audit log.</en>
+      <de>In diesem Abschnitt werden alle Ereignisse für Lenovo XClarity Administrator aufgelistet, die im Ereignis- oder Prüfprotokoll von Lenovo XClarity Administrator angezeigt werden können.</de>
+      <es>En esta sección se enumeran todos los sucesos de Lenovo XClarity Administrator que pueden verse en el registro de sucesos o en el registro de auditoría de Lenovo XClarity Administrator.</es>   
+      <fr>Cette section répertorie tous les événements Lenovo XClarity Administrator consultables dans le journal des événements ou le journal d'audit Lenovo XClarity Administrator.</fr>
+      <it>Questa sezione elenca tutti gli eventi di Lenovo XClarity Administrator che possono essere visualizzati nel log eventi o nel log di controllo di Lenovo XClarity Administrator.</it>
+      <ja>このセクションでは、Lenovo XClarity Administrator イベント・ログまたは監査ログに表示できるすべての Lenovo XClarity Administrator イベントをリストします。</ja>
+      <ko>이 섹션에서는 Lenovo XClarity Administrator 이벤트 로그나 감사 로그에서 볼 수 있는 모든 Lenovo XClarity Administrator 이벤트를 나열합니다.</ko>
+      <pt >Esta seção lista todos os eventos do Lenovo XClarity Administrator que podem ser exibidos no log de eventos ou no log de auditoria do Lenovo XClarity Administrator.</pt>
+      <ru>В этом разделе перечислены все события Lenovo XClarity Administrator, которые можно просмотреть в журнале событий Lenovo XClarity Administrator или в журнале аудита.</ru>
+      <th>ส่วนนี้แสดงรายการเหตุการณ์ Lenovo XClarity Administrator ทั้งหมดซึ่งสามารถดูได้ในบันทึกเหตุการณ์ของ Lenovo XClarity Administrator หรือบันทึกการตรวจสอบ</th>
+      <zh>本节列出了可在 Lenovo XClarity Administrator 事件日志或审核日志中查看的所有 Lenovo XClarity Administrator 事件。</zh>
+      <zh_HANT>本節列出可以在 Lenovo XClarity Administrator 事件日誌或審核日誌中檢視的所有 Lenovo XClarity Administrator 事件。</zh_HANT>
+   </lxca_events_shortdesc>
+
+
+<!-- ***thinkserver_messages_listing.dita *** -->
+   <thinkserver_events_topic_title>
+      <en>List of ThinkServer events</en>
+      <de>Liste der ThinkServer-Ereignisse</de>
+      <es>Lista de los sucesos de ThinkServer</es>
+      <fr>Liste des événements ThinkServer</fr>
+      <it>Elenco degli eventi di ThinkServer</it>
+      <ja>ThinkServer イベントのリスト</ja>
+      <ko>ThinkServer 이벤트 목록</ko>
+      <pt>Lista de eventos do ThinkServer</pt>
+      <ru>Список событий ThinkServer</ru>
+      <th>รายการเหตุการณ์ ThinkServer</th>
+      <zh>ThinkServer 事件列表</zh>
+      <zh_HANT>ThinkServer 事件清單</zh_HANT>
+   </thinkserver_events_topic_title>
+
+   <thinkserver_events_shortdesc>
+      <en>This section lists all ThinkServer events that can be viewed in the Lenovo XClarity Administrator event log or audit log.</en>
+      <de>In diesem Abschnitt werden alle ThinkServer-Ereignisse aufgelistet, die im Ereignis-oder Prüfprotokoll von Lenovo XClarity Administrator angezeigt werden können.</de>
+      <es>En esta sección se enumeran todos los sucesos de ThinkServer que pueden verse en el registro de sucesos o en el registro de auditoría de Lenovo XClarity Administrator.</es>    
+      <fr>Cette section répertorie tous les événements ThinkServer consultables dans le journal des événements ou le journal d'audit Lenovo XClarity Administrator.</fr>
+      <it>Questa sezione elenca tutti gli eventi di ThinkServer che possono essere visualizzati nel log eventi o nel log di controllo di Lenovo XClarity Administrator.</it>
+      <ja>このセクションでは、Lenovo XClarity Administrator イベント・ログまたは監査ログに表示できるすべての ThinkServer イベントをリストします。</ja>
+      <ko>이 섹션에서는 Lenovo XClarity Administrator 이벤트 로그나 감사 로그에서 볼 수 있는 모든 ThinkServer 이벤트를 나열합니다.</ko>
+      <pt>Esta seção lista todos os eventos do ThinkServer que podem ser exibidos no log  de eventos ou no log de auditoria do Lenovo XClarity Administrator.</pt>
+      <ru>В этом разделе перечислены все события ThinkServer, которые можно просмотреть в журнале событий или в журнале аудита Lenovo XClarity Administrator.</ru>
+      <th>ส่วนนี้แสดงเหตุการณ์ของ ThinkServer ทั้งหมดที่สามารถดูได้ในบันทึกเหตุการณ์หรือบันทึกการตรวจสอบ Lenovo XClarity Administrator</th>
+      <zh>本节列出了可在 Lenovo XClarity Administrator 事件日志或审核日志中查看的所有 ThinkServer 事件。</zh>
+      <zh_HANT>本節列出可以在 Lenovo XClarity Administrator 事件日誌或審核日誌中檢視的所有 ThinkServer 事件。</zh_HANT>
+   </thinkserver_events_shortdesc>
+
+   
+<!-- ***storage_messages_listing.dita *** -->
+   <storage_events_topic_title>
+      <en>List of Storage events</en>
+      <de>Liste der Storage-Ereignisse</de>
+      <es>Lista de los sucesos de almacenamiento</es>
+      <fr>Liste des événements de stockage</fr>
+      <it>Elenco degli eventi di storage</it>
+      <ja>Storage イベントのリスト</ja>
+      <ko>Storage 이벤트 목록</ko>
+      <pt>Lista de eventos do Storage</pt>
+      <ru>Список событий хранилища</ru>
+      <th>รายการเหตุการณ์เกี่ยวกับที่จัดเก็บ</th>
+      <zh>Storage 事件列表</zh>
+      <zh_HANT>Storage 事件清單</zh_HANT>
+   </storage_events_topic_title>
+    
+   <storage_events_shortdesc>
+      <en>This section lists all Storage events that can be viewed in the Lenovo XClarity Administrator event log or audit log.</en>
+      <de>In diesem Abschnitt werden alle Storage-Ereignisse aufgelistet, die im Ereignis-oder Prüfprotokoll von Lenovo XClarity Administrator angezeigt werden können.</de>
+      <es>En esta sección se enumeran todos los sucesos de almacenamiento que pueden verse en el registro de sucesos o en el registro de auditoría de Lenovo XClarity Administrator.</es>
+      <fr>Cette section répertorie tous les événements de stockage consultables dans le journal des événements ou le journal d'audit Lenovo XClarity Administrator.</fr>
+      <it>Questa sezione elenca tutti gli eventi di storage che possono essere visualizzati nel log eventi o nel log di controllo di Lenovo XClarity Administrator.</it>
+      <ja>このセクションでは、Lenovo XClarity Administrator イベント・ログまたは監査ログに表示できるすべての Storage イベントをリストします。</ja>
+      <ko>이 섹션에서는 Lenovo XClarity Administrator 이벤트 로그나 감사 로그에서 볼 수 있는 모든 Storage 이벤트를 나열합니다.</ko>
+      <pt>Esta seção lista todos os eventos do Storage que podem ser exibidos no log de eventos ou no log de auditoria do Lenovo XClarity Administrator.</pt>
+      <ru>В этом разделе перечислены все события хранилища, которые можно просмотреть в журнале событий или в журнале аудита Lenovo XClarity Administrator.</ru>
+      <th>ส่วนนี้แสดงเหตุการณ์ที่จัดเก็บทั้งหมดที่สามารถดูได้ในบันทึกเหตุการณ์หรือบันทึกการตรวจสอบ Lenovo XClarity Administrator</th>
+      <zh>本节列出了可在 Lenovo XClarity Administrator 事件日志或审核日志中查看的所有 Storage 事件。</zh>
+      <zh_HANT>本節列出可以在 Lenovo XClarity Administrator 事件日誌或審核日誌中檢視的所有 Storage 事件。</zh_HANT>
+   </storage_events_shortdesc>
+   
+   
+<!-- ***thinkserver_call_home_events *** -->
+   <thinkserver_callhome_topic_title>
+      <en>ThinkServer Events that automatically notify Support</en>
+      <de>ThinkServer-Ereignisse, durch die der Support automatisch benachrichtigt wird</de>
+      <es>Sucesos ThinkServer que notifican automáticamente al centro de soporte</es>
+      <fr>Événements ThinkServer avertissant automatiquement le service de support</fr>
+      <it>Eventi di ThinkServer che avvisano automaticamente il supporto</it>
+      <ja>自動的にサポートに通知される ThinkServer イベント</ja>
+      <ko>지원 알림을 자동으로 보내는 ThinkServer 이벤트</ko>
+      <pt>Eventos do ThinkServer que notificam o Suporte automaticamente</pt>
+      <ru>События ThinkServer, которые автоматически уведомляют службу поддержки</ru>
+      <th>เหตุการณ์ ThinkServer ที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</th>
+      <zh>自动通知支持机构的 ThinkServer 事件</zh>
+      <zh_HANT>會自動通知支援中心的 ThinkServer 事件</zh_HANT>
+   </thinkserver_callhome_topic_title>
+
+   <thinkserver_callhome_shortdesc>
+      <en>You can configure the Lenovo XClarity Administrator to automatically notify Support (also known as    <term>call home</term>) if certain types of ThinkServer errors are encountered. If you have configured this function, see the table for a list of events that automatically notify Support.</en>
+      <de>Sie können Lenovo XClarity Administrator so konfigurieren, dass der Support automatisch benachrichtigt wird (auch als    <term>Call-Home-Funktion</term> bezeichnet), wenn bestimmte ThinkServer-Fehlertypen auftreten. Wenn Sie diese Funktion konfiguriert haben, finden Sie in der Tabelle eine Liste der Ereignisse, durch die der Support automatisch benachrichtigt wird.</de>
+      <es>Puede configurar el Lenovo XClarity Administrator para notificar automáticamente al centro de soporte (también conocido como    <term>Llamar a casa</term>) si se encuentra determinados tipos de errores de ThinkServer. Si configuró está función, consulte la tabla para obtener una lista de los sucesos que notifican automáticamente al centro de soporte.</es>
+      <fr>Vous pouvez configurer Lenovo XClarity Administrator pour avertir automatiquement le service de support (aussi appelé    <term>appel vers Lenovo</term>) si vous rencontrez certains types d'erreur ThinkServer. Si vous avez configuré cette fonction, consultez la table pour la liste d'événements qui avertit automatiquement le service de support.</fr>
+      <it>Lenovo XClarity Administrator può essere configurato in modo da avvisare automaticamente il supporto (funzione nota anche come    <term>call home</term>) nel caso in cui si verifichino alcuni tipi di errori di ThinkServer. Se questa funzione è stata configurata, fare riferimento alla tabella per conoscere l'elenco di eventi che avvisano automaticamente il supporto.</it>
+      <ja>特定のタイプの ThinkServer エラーが発生した場合に自動的にサポートに通知するよう (   <term>コール・ホーム</term> とも呼ばれます)、Lenovo XClarity Administrator を構成することができます。この機能を構成してある場合、自動的にサポートに通知されるイベントのリストについては、表を参照してください。</ja>
+      <ko>특정 유형의 ThinkServer 오류가 발생한 경우    <term>콜 홈</term>이라고도 하는 지원 알림을 자동으로 보내도록 Lenovo XClarity Administrator를 구성할 수 있습니다. 이 기능을 구성한 경우 지원 자동 알림 이벤트 목록 표를 참조하십시오.</ko>
+      <pt>É possível configurar o Lenovo XClarity Administrator para notificar o Suporte automaticamente (também conhecido como    <term>call home</term>) caso determinados tipos de erros do ThinkServer sejam encontrados. Caso já tenha configurado essa função, consulte a tabela para obter uma lista de eventos que notificam o Suporte automaticamente.</pt>
+      <ru>Lenovo XClarity Administrator можно настроить для автоматического уведомления службы поддержки (также называется    <term>Call Home</term>) при возникновении определенных типов ошибок ThinkServer. Если вы включили эту функцию, в таблице можно посмотреть список событий, автоматически уведомляющих службу поддержки.</ru>
+      <th>คุณสามารถกำหนดค่า Lenovo XClarity Administrator เพื่อแจ้งฝ่ายสนับสนุนโดยอัตโนมัติ (หรือที่เรียกว่า    <term>Call Home</term>) หากพบข้อผิดพลาดบางประเภทเกี่ยวกับ ThinkServer หากคุณกำหนดค่าฟังก์ชันนี้แล้ว ให้ดูตารางแสดงรายการเหตุการณ์ที่แจ้งฝ่ายสนับสนุนอัตโนมัติ</th>
+      <zh>可配置 Lenovo XClarity Administrator，使其在遇到某些类型的 ThinkServer 错误时自动通知支持机构（也称为    <term>Call Home</term >）。如果配置了此功能，请参阅下表以了解会自动通知支持的事件的列表。</zh>
+      <zh_HANT>您可以配置 Lenovo XClarity Administrator 在發生某些類型的 ThinkServer 錯誤時，自動通知支援中心（亦稱為    <term>Call Home</term>）。您如有配置此功能，請參閱下表所列，會自動通知支援中心的事件清單。</zh_HANT> 
+   </thinkserver_callhome_shortdesc>
+
+   
+<!-- ***storage_call_home_events.dita *** -->	
+   <storage_callhome_topic_title>
+      <en>Storage Events that automatically notify Support</en>
+      <de>Speicherereignisse mit automatischer Benachrichtigung des Supports</de>
+      <es>Sucesos de almacenamiento que notifican automáticamente al centro de soporte</es>
+      <fr>Événements de stockage avertissant automatiquement le service de support</fr>
+      <it>Eventi di storage che avvisano automaticamente il supporto</it>
+      <ja>自動的にサポートに通知されるストレージ・イベント</ja>
+      <ko>지원 알림을 자동으로 보내는 Storage 이벤트</ko>
+      <pt>Eventos de armazenamento que notificam automaticamente o Suporte</pt>
+      <ru>События хранилища, о которых автоматически уведомляется служба поддержки</ru>
+      <th>เหตุการณ์ของที่จัดเก็บที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</th>
+      <zh>自动通知支持机构的存储事件</zh>
+      <zh_HANT>自動通知支援中心的儲存體事件</zh_HANT>
+   </storage_callhome_topic_title>
+   
+   <storage_callhome_shortdesc>
+      <en>You can configure the Lenovo XClarity Administrator to automatically notify Support (also known as    <term>call home</term>) if certain types of Storage errors are encountered. If you have configured this function, see the table for a list of events that automatically notify Support.</en>
+      <de>Sie können Lenovo XClarity Administrator so konfigurieren, dass der Support beim Auftreten bestimmter Storage-Fehler automatisch benachrichtigt wird (dies wird auch als    <term>Call-Home-Funktion</term> bezeichnet). Wenn Sie diese Funktion konfiguriert haben, finden Sie in der Tabelle eine Liste der Ereignisse, durch die der Support automatisch benachrichtigt wird.</de>
+      <es>Puede configurar el Lenovo XClarity Administrator para notificar automáticamente al centro de soporte (también conocido como    <term>Llamar a casa</term>) si se encuentra determinados tipos de errores de almacenamiento. Si configuró está función, consulte la tabla para obtener una lista de los sucesos que notifican automáticamente al centro de soporte.</es>
+      <fr>Vous pouvez configurer Lenovo XClarity  Administrator pour avertir automatiquement le service de support (aussi appelé    <term>appel vers Lenovo</term>) si vous rencontrez certains types d'erreur de stockage. Si vous avez configuré cette fonction, consultez la table pour la liste d'événements qui avertit automatiquement le service de support.</fr>
+      <it>Lenovo XClarity Administrator può essere configurato in modo da avvisare automaticamente il supporto (funzione nota anche come    <term>call home</term>) nel caso in cui si verifichino alcuni tipi di errori di storage. Se questa funzione è stata configurata, fare riferimento alla tabella per conoscere l'elenco di eventi che avvisano automaticamente il supporto.</it>
+      <ja>特定のタイプのストレージ・エラーが発生した場合に自動的にサポートに通知するよう(   <term>コール・ホーム</term> とも呼ばれます)、Lenovo XClarity Administrator を構成することができます。この機能を構成してある場合、自動的にサポートに通知されるイベントのリストについては、表を参照してください。</ja>   
+      <ko>특정 유형의 Storage 오류가 발생한 경우    <term>콜 홈</term>이라고도 하는 지원 알림을 자동으로 보내도록 Lenovo XClarity Administrator를 구성할 수 있습니다. 이 기능을 구성한 경우 지원 자동 알림 이벤트 목록 표를 참조하십시오.</ko>
+      <pt>É possível configurar o Lenovo XClarity Administrator para notificar o Suporte automaticamente (também conhecido como    <term>call home</term>) se certos tipos de erros de armazenamento forem encontrados. Caso já tenha configurado essa função, consulte a tabela para obter uma lista de eventos que notificam o Suporte automaticamente.</pt>
+      <ru>Можно настроить Lenovo XClarity Administrator таким образом, чтобы автоматически уведомлять службу поддержки (данная функция также называется    <term>call home</term>) при возникновении определенных типов ошибок хранилища. Если вы включили эту функцию, в таблице можно посмотреть список событий, автоматически уведомляющих службу поддержки.</ru>
+      <th>คุณสามารถกำหนดค่า Lenovo XClarity Administrator ให้แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ(หรือที่เรียกว่า    <term>Call Home</term>) หากพบข้อผิดพลาดบางประเภทของที่จัดเก็บข้อมูลหากคุณกำหนดค่าฟังก์ชันนี้แล้ว ให้ดูตารางแสดงรายการเหตุการณ์ที่แจ้งฝ่ายสนับสนุนอัตโนมัติ</th>
+      <zh>可配置 Lenovo XClarity Administrator，使其在遇到某些类型的存储错误时自动通知支持机构（也称为    <term>Call Home</term>）。如果配置了此功能，请参阅下表以了解会自动通知支持的事件的列表。</zh>
+      <zh_HANT>您可以配置 Lenovo XClarity Administrator 在發生某些類型的儲存體錯誤時自動通知支援中心（亦稱為    <term>Call Home</term>）。您如有配置此功能，請參閱下表所列，會自動通知支援中心的事件清單。</zh_HANT>
+   </storage_callhome_shortdesc>
+<auto_message_text>

@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<project name="internal">
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- PROPERTY DEFINITIONS                                  -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- Taskdef to ant-contrib needed for using the for loop. Also you need ant-contrib-<version>.jar copied into the lib folder of ant-->
+	<taskdef resource="net/sf/antcontrib/antlib.xml"/>	
+	
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- SCRIPTS/FUNCTIONS                                     -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- Scripts/Functions for ANT -->
+	<!-- Lowercase - accepts a string property and changes to lowercase. Sets output to specified local/global property name. -->
+	<scriptdef name="lowercase" language="javascript">
+		<attribute name="value"/>
+		<attribute name="property"/>
+		project.setNewProperty(attributes.get("property"), attributes.get("value").toLowerCase());
+	</scriptdef>
+
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	<!-- INTERNAL BUILD TARGETS                                -->
+	<!-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+	
+	<!-- copyPluginFilesDirectory copyies the plugin.xml and other files -->
+	<!-- that are needed for displaying content in EHS. We want to make sure -->
+	<!-- that we get all files that are needed.  If writers have additional -->
+	<!-- PDF files, for example, writers can place them in the source  -->
+	<!-- pluginfiles directory and they will be copied over to the -->
+	<!-- target plugins directory. -->
+	<target name="copyPluginFilesDirectory">
+	
+
+		<!-- Make sure that we are copying from the appropriate location -->
+		<echo>
+============================
+============================
+Target: copyPluginFilesDirectory
+============================
+sourcePluginsDir = ${sourcePluginsDir}
+targetPluginsDir = ${targetPluginsDir}
+============================
+============================
+        </echo>
+        <copy todir="${targetPluginsDir}" overwrite="true" failonerror="false" preservelastmodified="true">
+              <fileset dir="${sourcePluginsDir}" includes="**/*.*"/>
+        </copy>
+	</target>
+
+	<!-- copyInterimPluginOuptut copies the results from each build target to a consolidated directory. -->
+	<!-- Makes it easier to copy multiple plugins from this directory to the nightly build instance. -->
+	<target name="copyInterimPluginOutput"  unless="translation_build">
+
+		<!-- Make sure that we are copying from the appropriate location -->
+		<echo>
+============================
+============================
+Target: copyInterimPluginOutput
+============================
+resultsDirectory = ${resultsDirectory}
+currentDirectory = ${currentDirectory}
+============================
+============================
+
+        </echo>
+        <!-- Make sure the results directory exists -->
+        <mkdir dir="${resultsDirectory}"/>	
+
+		<!-- If directory does exist, remove all files from the directory so that we start with a clean bulid -->
+        <echo message="Deleting existing files from ${resultsDirectory}"/>		
+        <delete includeEmptyDirs="true">
+             <fileset dir="${resultsDirectory}" includes="**/*"/>
+        </delete>			
+
+		<!-- Zip up the html and graphics output into a doc.zip file -->
+		<!-- Makes moving files around much easier -->
+		<echo message="Creating doc.zip from files in ${currentDirectory} and posting to ${resultsDirectory}."/>
+		<zip destfile="${resultsDirectory}\doc.zip"
+		     basedir="${currentDirectory}"
+		     includes="*.html, *.jpg, *.png, *.gif"/>
+		
+		<!-- Copy the relevant files to the plug-ins output directory.  We do not need -->
+		<!-- the HTML / artwork files because we created the doc.zip for those files. -->
+		<echo message="Copying output to ${resultsDirectory}."/>
+        <copy todir="${resultsDirectory}" overwrite="true" failonerror="false" preservelastmodified="true">
+              <fileset dir="${currentDirectory}" includes="OS_deploy_samples/*.*, META-INF/*.*, *.xml, *.css, *.ini, *.pdf, *.js, *.mib, *.cmd, *.json, *.cfg, *.wim, *.ps1, nl/**/*.*"/>
+        </copy>
+	</target>	
+	
+	<!-- copyInterimPluginOuptut copies the results from each build target to a consolidated directory. -->
+	<!-- Makes it easier to copy multiple plugins from this directory to the nightly build instance. -->
+	<target name="copyInterimPluginOutputTranslation"  if="translation_build">
+
+		<!-- Make sure that we are copying from the appropriate location -->
+		<echo>
+============================
+============================
+Target: copyInterimPluginOutputTranslated
+============================
+resultsDirectory = ${resultsDirectory}
+currentDirectory = ${currentDirectory}
+============================
+============================
+
+        </echo>
+        <!-- Make sure the results directory exists -->
+        <mkdir dir="${resultsDirectory}"/>	
+
+		<!-- If directory does exist, remove all files from the directory so that we start with a clean bulid -->
+        <echo message="Deleting existing files from ${resultsDirectory}"/>		
+        <delete includeEmptyDirs="true">
+             <fileset dir="${resultsDirectory}" includes="**/*"/>
+        </delete>			
+
+		<!-- Zip up the html and graphics output into a doc.zip file -->
+		<!-- Makes moving files around much easier -->
+		<echo message="Creating doc.zip from files in ${currentDirectory} and posting to ${resultsDirectory}."/>
+		<zip destfile="${resultsDirectory}\doc.zip"
+		     basedir="${currentDirectory}"
+		     includes="*.html, *.jpg, *.png, *.gif"/>
+		
+		<!-- Copy the relevant files to the plug-ins output directory.  We do not need -->
+		<!-- the HTML / artwork files because we created the doc.zip for those files. -->
+		<echo message="Copying output to ${resultsDirectory}."/>
+        <copy todir="${resultsDirectory}" overwrite="true" failonerror="false" preservelastmodified="true">
+              <fileset dir="${currentDirectory}" includes="OS_deploy_samples/*.*, *.xml, *.css, *.ini, *.pdf, *.js, *.mib, *.cmd, *.json, *.cfg, *.wim, *.ps1" excludes="META-INF/*.*, plugin.xml"/>
+        </copy>
+	</target>	
+	
+	<!-- copyInterimPluginOutput copies the results from each build target to a consolidated directory. -->
+	<!-- Makes it easier to copy multiple plugins from this directory to the nightly build instance. -->
+	<target name="copyLogOutput">
+
+		<!-- Make sure that we are copying from the appropriate location -->
+		<echo>
+============================
+============================
+Target: copyLogOutput
+============================
+resultsDirectory = ${resultsDirectory}
+currentDirectory = ${currentDirectory}
+buildLog = ${buildLog}
+logFile = ${logFile}
+============================
+============================
+        </echo>
+        <!-- Make sure the results directory exists -->
+        <mkdir dir="${resultsDirectory}"/>	
+		
+		<!-- Delete existing log file -->
+		<delete file="${resultsDirectory}\${logFile}"/>
+
+        <copy tofile="${resultsDirectory}\${logFile}" overwrite="true" failonerror="false" preservelastmodified="true">
+              <fileset file="${buildLog}"/>
+        </copy>
+	</target>	
+	
+	<!-- createCmmMessages produces the a set of .DITA files and a .DITAMAP from the source CMM messages XML file. -->
+    <target name="createCmmMessages">
+        <!-- Set the command to enable Related Links or send a blank command to process without -->
+        <condition property="map_param_result" value="+maptable=${cmmLocalMessageStore}${file.separator}${prod_maptable}" else="">
+			<isset property="prod_maptable"/>
+        </condition>
+        
+		<!-- Set flag to enable/prevent the copy of Map Table. Prevents a Copy Error -->
+        <condition property="maptable_flag_result" value="true" else="false">
+            <isset property="prod_maptable"/>
+        </condition>
+        
+<echo>
+============================
+============================
+Target: createCmmMessages
+============================
+============================
+productName = ${productName}
+prodBldDir = ${prodBldDir}
+CMMMessagesBuild = ${CMMMessagesBuild}
+cmmMessagesDtd = ${cmmMessagesDtd}
+cmmLocalMessageStore = ${cmmLocalMessageStore}
+cmmLocalXmlFile = ${cmmLocalXmlFile}
+prod_maptable_dir =  ${prod_maptable_dir}
+prod_maptable = ${prod_maptable}
+============================
+</echo>
+
+		<!-- Copy the IMM messages file. -->
+		<echo message="Copying CMM file ${cmmFileName} from  ${CMMMessagesBuild} to ${cmmLocalMessageStore}"/>		
+		<copy todir="${cmmLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${CMMMessagesBuild}" includes="${cmmFileName}"/>
+        </copy>
+		
+		<!-- Copy the DTD to the local directory -->
+		<echo message="Copying DTD file ${cmmMessagesDtd} from  ${CMMMessagesBuild}"/>		
+		<copy todir="${cmmLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${CMMMessagesBuild}" includes="${cmmMessagesDtd}"/>
+	    </copy>
+			
+		<!-- Copy mapping table if needed -->
+        <antcall target="get_mapping_table">
+			<param name="flex_msg_source" value="${CMMMessagesBuild}"/>
+            <param name="local_message_store" value="${cmmLocalMessageStore}"/>
+            <param name="maptable_dir" value="${prod_maptable_dir}"/>
+            <param name="maptable_filename" value="${prod_maptable}"/>
+            <param name="get_maptable_flag" value="${maptable_flag_result}"/>
+        </antcall>	
+
+		<!-- Generate the XML message output -->
+        <antcall target="kickoffMessages">
+            <param name="msgXmlFilename" value="${cmmLocalXmlFile}"/>
+            <param name="msgDitamapFilename" value="${prodBldDir}${file.separator}cmm_messages.ditamap"/>
+            <param name="msgOutDir" value="${prodBldDir}"/>
+            <param name="msgProdName" value="${productName}"/>
+            <param name="msgType" value="CMM"/>
+             <param name="mapCommand" value="${map_param_result}"/>
+         </antcall>
+     </target>		
+
+	<!-- createDsaMessages produces the a set of .DITA files and a .DITAMAP from the source DSA messages XML files. -->
+    <target name="createDsaMessages"  unless="translation_build">	
+        <loadfile srcfile="${bldTools}${file.separator}dsa_messages.txt" property="file">
+			<filterchain>
+				<filterreader classname="org.apache.tools.ant.filters.HeadFilter">                   
+					<param name="lines" value="-1"/>
+				</filterreader>
+			</filterchain>
+        </loadfile>
+	
+<echo>	
+============================
+============================
+Target: createDSAMessages
+============================
+============================
+productName = ${productName}
+prodBldDir = ${prodBldDir}
+DSAMessagesBuild = ${DSAMessagesBuild}
+dsaMessagesDtd = ${dsaMessagesDtd}
+dsaLocalMessageStore = ${dsaLocalMessageStore}
+dsaLocalXmlFile = ${dsaLocalXmlFile}
+============================
+</echo>		
+		
+		<!-- Copy the DSA messages file. -->
+		<echo message="Copying DSA Unique file ${dsaLocalXmlFile} from  ${DSAMessagesBuild}"/>		
+		<copy todir="${dsaLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${DSAMessagesBuild}" includes="${dsaLocalXmlFile}"/>
+        </copy>
+		
+		<!-- Copy the DTD to the local directory -->
+		<echo message="Copying DTD file ${dsaMessagesDtd} from  ${DSAMessagesBuild}"/>		
+		<copy todir="${dsaLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${DSAMessagesBuild}" includes="${dsaMessagesDtd}"/>
+	    </copy>
+		 
+        <!-- Kick off unique DSA xml file -->
+        <antcall target="kickoffMessages">
+            <param name="msgXmlFilename" value="${dsaLocalMessageStore}\${dsaLocalXmlFile}"/>
+            <param name="msgDitamapFilename" value="${prodBldDir}${file.separator}dsa_messages.ditamap"/>
+            <param name="msgOutDir" value="${prodBldDir}"/>
+            <param name="msgProdName" value="${productName}"/>
+            <param name="msgType" value="DSA"/>
+            <param name="mapCommand" value=""/>  <!-- Send no command (DSA doesn't use map table) -->
+        </antcall>
+    	
+		<!-- Copies the common DSA xml files. -->
+    	<echo>
+    	DSA Local Message Store = ${dsaLocalMessageStore}
+    	DSA Common Source = ${dsaCommonSource}
+    	</echo>
+    	<copy todir="${dsaLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+    		<fileset dir="${dsaCommonSource}" includes="*.*"/>
+        </copy>
+		
+		<!-- Kick off common DSA messages -->
+        <for param="line" list="${file}" delimiter="${line.separator}">
+            <sequential>
+                <local name="xml_ditamap"/>
+                <lowercase value="@{line}" property="xml_ditamap"/>
+                <echo message="Creating Ditamap: ${prodBldDir}${file.separator}${xml_ditamap}.ditamap"/>
+
+                <antcall target="kickoffMessages">
+                    <param name="msgXmlFilename" value="${dsaLocalMessageStore}${file.separator}@{line}.xml"/>
+                    <param name="msgDitamapFilename" value="${prodBldDir}${file.separator}${xml_ditamap}.ditamap"/>
+                    <param name="msgOutDir" value="${prodBldDir}"/>
+                    <param name="msgProdName" value="${productName}"/>
+                    <param name="msgType" value="DSA"/>
+                    <param name="mapCommand" value=""/>
+                </antcall>
+            </sequential>
+        </for>
+    </target>	
+	
+	<!-- createImmMessages produces the a set of .DITA files and a .DITAMAP from the source IMM messages XML file. -->
+    <target name="createImmMessages" unless="translation_build">
+        <!-- Set the command to enable Related Links or send a blank command to process without -->
+        <condition property="map_param_result" value="+maptable=${immLocalMessageStore}${file.separator}${prod_maptable}" else="">
+			<isset property="prod_maptable"/>
+        </condition>
+        
+		<!-- Set flag to enable/prevent the copy of Map Table. Prevents a Copy Error -->
+        <condition property="maptable_flag_result" value="true" else="false">
+            <isset property="prod_maptable"/>
+        </condition>
+        
+<echo>
+============================
+============================
+Target: createImmMessages
+============================
+============================
+productName = ${productName}
+prodBldDir = ${prodBldDir}
+IMMMessagesBuild = ${IMMMessagesBuild}
+immMessagesDtd = ${immMessagesDtd}
+immLocalMessageStore = ${immLocalMessageStore}
+immLocalXmlFile = ${immLocalXmlFile}
+prod_maptable_dir =  ${prod_maptable_dir}
+prod_maptable = ${prod_maptable}
+============================
+</echo>
+
+		<!-- Copy the IMM messages file. -->
+		<echo message="Copying IMM file ${immFileName} from  ${IMMMessagesBuild}"/>		
+		<copy todir="${immLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${IMMMessagesBuild}" includes="${immFileName}"/>
+        </copy>
+		
+		<!-- Copy the DTD to the local directory -->
+		<echo message="Copying DTD file ${immMessagesDtd} from  ${IMMMessagesBuild}"/>		
+		<copy todir="${immLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${IMMMessagesBuild}" includes="${immMessagesDtd}"/>
+	    </copy>
+			
+		<!-- Copy mapping table if needed -->
+        <antcall target="get_mapping_table">
+			<param name="flex_msg_source" value="${IMMMessagesBuild}"/>
+            <param name="local_message_store" value="${immLocalMessageStore}"/>
+            <param name="maptable_dir" value="${prod_maptable_dir}"/>
+            <param name="maptable_filename" value="${prod_maptable}"/>
+            <param name="get_maptable_flag" value="${maptable_flag_result}"/>
+        </antcall>	
+
+		<!-- Generate the XML message output -->
+        <antcall target="kickoffMessages">
+            <param name="msgXmlFilename" value="${immLocalXmlFile}"/>
+            <param name="msgDitamapFilename" value="${prodBldDir}${file.separator}imm_messages.ditamap"/>
+            <param name="msgOutDir" value="${prodBldDir}"/>
+            <param name="msgProdName" value="${productName}"/>
+            <param name="msgType" value="IMM"/>
+             <param name="mapCommand" value="${map_param_result}"/>
+         </antcall>
+     </target>		
+	 
+	<!-- createLxcaMessages produces the a set of .DITA files and a .DITAMAP from the source LXCA combined messages XML file. -->
+    <target name="createLxcaMessages">
+        <!-- Set the command to enable Related Links or send a blank command to process without -->
+        <condition property="map_param_result" value="+maptable=${LXCALocalMessageStore}${file.separator}${prod_maptable}" else="">
+			<isset property="prod_maptable"/>
+        </condition>
+        
+		<!-- Set flag to enable/prevent the copy of Map Table. Prevents a Copy Error -->
+        <condition property="maptable_flag_result" value="true" else="false">
+            <isset property="prod_maptable"/>
+        </condition>
+        
+<echo>
+============================
+============================
+Target: createLXCAMessages
+============================
+============================
+productName = ${productName}
+prodBldDir = ${prodBldDir}
+LXCAMessagesBuild = ${LXCAMessagesBuild}
+messagesDtd = ${messagesDtd}
+LXCALocalMessageStore = ${LXCALocalMessageStore}
+LXCALocalXmlFile = ${LXCALocalXmlFile}
+prod_maptable_dir =  ${prod_maptable_dir}
+prod_maptable = ${prod_maptable}
+============================
+</echo>
+
+		<!-- Copy the LXCA messages file. -->
+		<echo message="Copying LXCA Messages file ${LXCAMessagesBuild}\${LXCAFileName} to ${LXCALocalMessageStore}"/>		
+		<copy todir="${LXCALocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${LXCAMessagesBuild}" includes="${LXCAFileName}"/>
+        </copy>
+		
+		<!-- Copy the DTD to the local directory -->
+		<echo message="Copying DTD file ${messagesDtd} from  ${LXCAMessagesBuild}"/>		
+		<copy todir="${LXCALocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${LXCAMessagesBuild}" includes="${messagesDtd}"/>
+	    </copy>
+			
+		<!-- Copy mapping table if needed -->
+        <antcall target="get_mapping_table">
+			<param name="flex_msg_source" value="${LXCAMessagesBuild}"/>
+            <param name="local_message_store" value="${LXCALocalMessageStore}"/>
+            <param name="maptable_dir" value="${prod_maptable_dir}"/>
+            <param name="maptable_filename" value="${prod_maptable}"/>
+            <param name="get_maptable_flag" value="${maptable_flag_result}"/>
+        </antcall>	
+
+		<!-- Generate the XML message output -->
+        <antcall target="kickoffMessages">
+            <param name="msgXmlFilename" value="${LXCALocalXmlFile}"/>
+            <param name="msgDitamapFilename" value="${prodBldDir}\${ditaMapFileName}"/>
+            <param name="msgOutDir" value="${prodBldDir}"/>
+            <param name="msgProdName" value="${productName}"/>
+            <param name="msgType" value="LXCA"/>
+             <param name="mapCommand" value="${map_param_result}"/>
+         </antcall>
+     </target>			 
+
+	<!-- createUefiMessages produces the a set of .DITA files and a .DITAMAP from the source IMM messages XML file. -->
+    <target name="createUefiMessages" unless="translation_build">
+        <!-- Set the command to enable Related Links or send a blank command to process without -->
+        <condition property="map_param_result" value="+maptable=${uefiLocalMessageStore}${file.separator}${prod_maptable}" else="">
+			<isset property="prod_maptable"/>
+        </condition>
+        
+		<!-- Set flag to enable/prevent the copy of Map Table. Prevents a Copy Error -->
+        <condition property="maptable_flag_result" value="true" else="false">
+            <isset property="prod_maptable"/>
+        </condition>
+        
+<echo>
+============================
+============================
+Target: createUEFIMessages
+============================
+============================
+productName = ${productName}
+prodBldDir = ${prodBldDir}
+UEFIMessagesBuild = ${UEFIMessagesBuild}
+uefiMessagesDtd = ${uefiMessagesDtd}
+uefiLocalMessageStore = ${uefiLocalMessageStore}
+uefiLocalXmlFile = ${uefiLocalXmlFile}
+prod_maptable_dir =  ${prod_maptable_dir}
+prod_maptable = ${prod_maptable}
+=============================
+</echo>
+
+		<!-- Copy the UEFI messages file. -->
+		<echo message="Copying UEFI file ${uefiFileName} from  ${UEFIMessagesBuild}"/>		
+		<copy todir="${uefiLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${UEFIMessagesBuild}" includes="${uefiFileName}"/>
+        </copy>
+		
+		<!-- Copy the DTD to the local directory -->
+		<echo message="Copying DTD file ${uefiMessagesDtd} from  ${UEFIMessagesBuild} to ${uefiLocalMessageStore} "/>		
+		<copy todir="${uefiLocalMessageStore}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${UEFIMessagesBuild}" includes="${uefiMessagesDtd}"/>
+	    </copy>
+			
+		<!-- Copy mapping table if needed -->
+        <antcall target="get_mapping_table">
+			<param name="flex_msg_source" value="${UEFIMessagesBuild}"/>
+            <param name="local_message_store" value="${uefiLocalMessageStore}"/>
+            <param name="maptable_dir" value="${prod_maptable_dir}"/>
+            <param name="maptable_filename" value="${prod_maptable}"/>
+            <param name="get_maptable_flag" value="${maptable_flag_result}"/>
+        </antcall>	
+
+		<!-- Generate the XML message output -->
+        <antcall target="kickoffMessages">
+            <param name="msgXmlFilename" value="${uefiLocalXmlFile}"/>
+            <param name="msgDitamapFilename" value="${prodBldDir}${file.separator}uefi_messages.ditamap"/>
+            <param name="msgOutDir" value="${prodBldDir}"/>
+            <param name="msgProdName" value="${productName}"/>
+            <param name="msgType" value="UEFI"/>
+             <param name="mapCommand" value="${map_param_result}"/>
+         </antcall>
+     </target>		
+	
+	<!-- displayDateAndTime is an internal target that generates a time stamp for when the build -->
+	<!-- starts. -->
+	<target name="displayDateAndTime">
+		<tstamp/>
+		<echo>
+============================
+============================
+Build Started:
+${TODAY} at ${TSTAMP}
+============================
+============================
+		</echo>
+	</target>	
+	
+    <target name="kickoffMessages">
+        <!-- Determines whether to skip creating the topicref for call home -->
+        <condition property="skip_ch_cmd" value="skip_call_home=${skip_call_home}" else="">
+              <equals arg1="true" arg2="${skip_call_home}"/>
+        </condition>
+		<echo message="Creating the messages"/>
+        <echo message="Creating Ditamap: ${msgDitamapFilename}"/>
+        <exec executable="cmd">
+            <arg value="/c"/>
+            <arg value="java"/>
+            <arg value="-jar"/>
+            <arg value="${saxonLocation}"/>
+            <arg value="-s:${msgXmlFilename}"/>
+            <arg value="-xsl:${bldTools}${file.separator}convertSTGxml.xsl"/>
+            <arg value="-o:${msgDitamapFilename}"/>
+            <arg value="outputdir=${msgOutDir}"/>
+            <arg value="product='${msgProdName}'"/>
+            <arg value="${mapCommand}"/>
+            <arg value="product_family=${prodFamily}"/>
+            <arg value="msgtype=${msgType}"/>
+         </exec>
+         </target>	
+	
+	<!-- setupBuild is an internal target that is used to prepare the directory on the build server for the -->
+	<!-- product to be built.  It creates the directory on the build server if the directory does not -->
+	<!-- exist, deletes the existing files on the build server if the directory does exist, and copies -->
+	<!-- all files from the repository where the files are stored to the build server for processing. -->	
+	<target name="setupBuild" depends="displayDateAndTime">
+		
+		<!-- Make sure that we are pulling files from the appropriate location. -->
+        <echo>
+============================
+============================
+Target: setupBuild
+============================
+bldTools = ${bldTools}
+prodSource = ${prodSource}
+prodBldDir = ${prodBldDir}
+interimBldOutputDir = ${interimBldOutputDir}
+============================
+============================
+        </echo>
+
+        <!-- Make sure the directory in the build server exists -->
+        <!-- <mkdir dir="${prodBldDir}"/> -->
+		
+		<!-- Make sure the directory in the build server exists -->
+        <mkdir dir="${prodBldDir}"/>
+		<mkdir dir="${interimBldOutputDir}"/>
+
+		<!-- If directory does exist, remove all files from the directory so that we start with a clean bulid -->
+        <echo message="Deleting output files from ${interimBldOutputDir}"/>		
+        <delete includeEmptyDirs="true">
+             <fileset dir="${interimBldOutputDir}" includes="**/*"/>
+        </delete>		
+
+        <!-- Clean up build server source directory to ensure that we are starting from scratch -->
+        <echo message="Deleting build files from ${prodBldDir}"/>		
+        <delete>
+             <fileset dir="${prodBldDir}" includes="*.ditamap, *.ditaval, *.dita, *.jpg, *.png, *.gif, *.css"/>
+        </delete>
+
+        <!-- Copy files needed for build process -->
+		<echo message="Copying source files from ${prodSource} - (.ditamap, .ditaval, .dita, and .jpg) "/>		
+        <copy todir="${prodBldDir}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${prodSource}" includes="*.ditamap, *.ditaval, *.dita, *.jpg, *.gif, *.png"/>
+        </copy>
+        
+        <!-- Copy JavaScript files needed for build process -->
+		<echo message="Copying source files from ${javafiles} - (feedback.js and sendlink.js) "/>
+        <copy todir="${interimBldOutputDir}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${javafiles}" includes="*.js"/>
+        </copy>
+
+		<!-- Copy the cascading style sheets. -->
+		<echo message="Copying cascading style sheets from ${cssFileDirectory}"/>
+		<copy todir="${prodBldDir}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${cssFileDirectory}" includes="*.css"/>
+        </copy>
+		
+<echo>
+Preprocessing files to convert graphic calls from .EPS to .JPG and remove page and line break tags
+</echo>		
+		
+		<!-- Convert all graphics calls from .EPS to .JPG -->
+		<exec executable="perl" failonerror="false" failifexecutionfails="false">
+            <arg value="${bldTools}${file.separator}preprocessFiles.pm"/>
+            <arg value="${prodBldDir}\"/>
+        </exec>
+    </target>
+	
+	<!-- get_mapping_table is used to get the mapping table if the variable get_maptable_flag is set.-->
+    <target name="get_mapping_table" if="${get_maptable_flag}">
+        <!-- For IMM and UEFI messages (filename flag supplied), copy product's maptable and .dtd -->
+        <echo message="Map Table Source Location: ${prod_maptable_dir}${file.separator}${prod_maptable}"/>
+        <copy todir="${local_message_store}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${maptable_dir}" includes="${maptable_filename},*.dtd"/>
+        </copy>
+    </target>	
+	
+    <target name="shutDownServer">
+<echo>
+============================
+============================
+Target: shutDownServer
+============================
+ehsTestDir = ${ehsTestDir}
+stopBatFile = ${stopBatFile}
+============================
+============================	
+</echo>
+
+       <exec executable="cmd"  dir="${ehsTestDir}" spawn="true">
+			<arg value="/c"/>
+			<arg value="${ehsTestDir}${file.separator}${stopBatFile}"/>
+        </exec>
+ 		<echo message="Sleeping for one minute"/>
+		<sleep minutes="1"/>
+    </target>
+
+    <target name="copyPluginstoEhs">
+<echo>
+============================
+============================
+Target: copyPluginstoEhs
+============================
+ehsPlugins = ${ehsPlugins}
+projBuildDirectory = ${projBuildDirectory}
+============================
+============================	
+</echo>	
+        <!-- Copy the build output to the plugins directory for the test instance - removed overwrite='true' -->
+		<echo message="Copying files from ${projBuildDirectory}${file.separator}${aggregatedPlugins} to ${ehsPlugins}"/>				
+        <copy todir="${ehsPlugins}" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${projBuildDirectory}${file.separator}${aggregatedPlugins}" includes="**/*.*"/>
+        </copy>
+
+		<echo message="Copying logs from ${projBuildDirectory}${file.separator}Logs to ${ehsPlugins}"/>				
+        <copy todir="${ehsPlugins}${file.separator}com.lenovo.logs.doc" overwrite="true" failonerror="false" preservelastmodified="true">
+            <fileset dir="${projBuildDirectory}${file.separator}Logs" includes="**/*.*"/>
+        </copy>   
+	</target>	
+	
+    <target name="startUpServer">
+<echo>
+============================
+============================
+Target: startUpServer
+============================
+ehsStartTestDir = ${ehsStartTestDir}
+startBatFile = ${startBatFile}
+============================
+============================	
+</echo>		
+        <exec executable="cmd"  dir="${ehsStartTestDir}" spawn="true">
+			<arg value="/c"/>
+			<arg value="${ehsStartTestDir}${file.separator}${startBatFile}"/>
+        </exec>
+    </target>	  		
+</project>

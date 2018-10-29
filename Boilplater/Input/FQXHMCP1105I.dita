@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reference id="msg_FQXHMCP1105I" otherprops="External" xml:lang="en">
+ <refbody>
+    <section>
+      <title>zh</title>
+      <p><varname>[arg1]</varname>  Pattern name</p>
+      <p><varname>[arg2]</varname>  Server or chassis name</p>
+    </section>
+    <section otherprops="Internal">
+      <title>Internal Event</title>
+      <p>No</p>
+    </section>
+    <section>
+      <title>Severity</title>
+      <p>Informational</p>
+    </section>
+    <section>
+      <title>Serviceable</title>
+      <p>No</p>
+    </section>
+    <section>
+      <title>Automatically Notify Support</title>
+      <p>No</p>
+    </section>
+    <section><title>User Response</title>Information only; no action is required.</section>
+    <section otherprops="Internal">
+      <title>Reviewed</title>
+      <p>4/3/2014</p>
+    </section>
+  </refbody>
+</reference>
