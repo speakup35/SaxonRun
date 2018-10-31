@@ -1,62 +1,446 @@
+<!-- The following language codes are used in the properties files names that are provided by the development team. 
+For consistency, the same codes are used in this XML.
+  - en      English
+  - de      German
+  - es      Spanish
+  - fr      French
+  - it      Italian
+  - ja      Japanese
+  - ko      Korean
+  - pt-br   Brazilian Portuguese
+  - ru      Russian
+  - th      Thai
+  - zh-cn   Simplified Chinese
+  - zh-tw   Traditional Chinese
+-->
+
 <auto_message_text>
+
+<!-- 
+==========================================================================
+If the language is not available, use en by default. 
+
+The following values are by these scripts and output files: 
+	convertSTGxml.xsl         ->  FQX*.dita
+	buildLxcaMessagesPDF.xsl  ->  messages_*_events_pdf_autogen.dita
+	lxca_severity.xsl.        ->  messages_*_eventsbyseverity_autogen.dita
+	pullCallHomeEvents.xsl  ->  messages_*_callhome_events_autogen.dita
+==========================================================================
+-->
+
 	<Arguments>
-		<Lang> 
-			<country>de</country>
-			<value>Argumente</value>
-		</Lang>
-		<Lang> 
-			<country>es</country>
-			<value>Argumentos</value>
-		</Lang>
-		<Lang> 
-			<country>fr</country>
-			<value>Arguments</value>
-		</Lang>
-		<Lang> 
-			<country>it</country>
-			<value>Argomenti</value>
-		</Lang>
-		<Lang> 
-			<country>ja</country>
-			<value>引数</value>
-		</Lang>
-		<Lang> 
-			<country>ko</country>
-			<value>인수</value>
-		</Lang>
-		<Lang> 
-			<country>pt</country>
-			<value>Argumentos</value>
-		</Lang>
-		<Lang> 
-			<country>ru</country>
-			<value>Аргументы</value>
-		</Lang>
-		<Lang> 
-			<country>th</country>
-			<value>อาร์กิวเมนต์</value>
-		</Lang>
-		<Lang> 
-			<country>zh</country>
-			<value>参数</value>
-		</Lang>
-		<Lang> 
-			<country>zh_HANT</country>
-			<value>引數</value>
-		</Lang>
+		<Lang><country>de</country>    <value>Argumente</value></Lang>
+		<Lang><country>en</country>    <value>Arguments</value></Lang>
+		<Lang><country>es</country>    <value>Argumentos</value></Lang>
+		<Lang><country>fr</country>    <value>Arguments</value></Lang>
+		<Lang><country>it</country>    <value>Argomenti</value></Lang>
+		<Lang><country>ja</country>    <value>引数</value></Lang>
+		<Lang><country>ko</country>    <value>인수</value></Lang>
+		<Lang><country>pt-br</country> <value>Argumentos</value></Lang>
+		<Lang><country>ru</country>    <value>Аргументы</value></Lang>
+		<Lang><country>th</country>    <value>อาร์กิวเมนต์</value></Lang>
+		<Lang><country>zh-cn</country> <value>参数</value></Lang>
+		<Lang><country>zh_tw</country> <value>引數</value></Lang>
+    </Arguments>
+
+	<Explanation>
+		<Lang><country>de</country>    <value>Erläuterung</value></Lang>
+		<Lang><country>en</country>    <value>Explanation</value></Lang>
+		<Lang><country>es</country>    <value>Explanation</value></Lang>
+		<Lang><country>fr</country>    <value>Explicación</value></Lang>
+		<Lang><country>it</country>    <value>Spiegazione</value></Lang>
+		<Lang><country>ja</country>    <value>説明</value></Lang>
+		<Lang><country>ko</country>    <value>설명</value></Lang>
+		<Lang><country>pt-br</country> <value>Explicação</value></Lang>
+		<Lang><country>ru</country>    <value>объяснение</value></Lang>
+		<Lang><country>th</country>    <value>คำอธิบาย</value></Lang>
+		<Lang><country>zh-cn</country> <value>说明</value></Lang>
+		<Lang><country>zh_tw</country> <value>說明</value></Lang>
+    </Explanation>
+	
+    <AlertCategory>
+		<Lang><country>en</country>    <value>SNMP Trap ID</value></Lang>
+	</AlertCategory> 
+	
+    <SNMPTrapID>
+		<Lang><country>de</country>    <value>Alertkategorie</value></Lang>
+		<Lang><country>en</country>    <value>Alert Category</value></Lang>
+		<Lang><country>es</country>    <value>Categoría de las alertas</value></Lang>
+		<Lang><country>fr</country>    <value>Catégorie d'alerte</value></Lang>
+		<Lang><country>it</country>    <value>Categoria avvisi</value></Lang>
+		<Lang><country>ja</country>    <value>アラート・カテゴリー</value></Lang>
+		<Lang><country>ko</country>    <value>경보 범주</value></Lang>
+		<Lang><country>pt-br</country> <value>Categoria do Alerta</value></Lang>
+		<Lang><country>ru</country>    <value>Категория оповещений</value></Lang>
+		<Lang><country>th</country>    <value>ประเภทการแจ้งเตือน</value></Lang>
+		<Lang><country>zh-cn</country> <value>警报类别</value></Lang>
+		<Lang><country>zh_tw</country> <value>警示種類</value></Lang>
+	</SNMPTrapID>
+	 
+    <LogSource>
+		<Lang><country>en</country>    <value>Log Source</value></Lang>
+	</LogSource> 
+	 
+	<Serviceable>
+		<Lang><country>de</country>    <value>Wartungsfähig</value></Lang>
+		<Lang><country>en</country>    <value>Serviceable</value></Lang>
+		<Lang><country>es</country>    <value>Es reparable</value></Lang>
+		<Lang><country>fr</country>    <value>Réparable</value></Lang>
+		<Lang><country>it</country>    <value>Manutenzione</value></Lang>
+		<Lang><country>ja</country>    <value>保守可能</value></Lang>
+		<Lang><country>ko</country>    <value>서비스 가능</value></Lang>
+		<Lang><country>pt-br</country> <value>Permite manutenção</value></Lang>
+		<Lang><country>ru</country>    <value>Подлежит обслуживанию</value></Lang>
+		<Lang><country>th</country>    <value>ซ่อมบำรุงได้</value></Lang>
+		<Lang><country>zh-cn</country> <value>可维护</value></Lang>
+		<Lang><country>zh_tw</country> <value>可維修</value></Lang>
+    </Serviceable>
+	
+	<Internal>
+		<Lang><country>en</country>    <value>Internal Event</value></Lang>
+    </Internal>
+
+	<Recoverable>
+		<Lang><country>en</country>    <value>Recoverable</value></Lang>
+    </Recoverable>
+
+	<Notifiable>
+		<Lang><country>en</country>    <value>Notifiable</value></Lang>
+    </Notifiable>
+
+	<Severity>
+		<Lang><country>de</country>    <value>Dringlichkeit</value></Lang>
+		<Lang><country>en</country>    <value>Severity</value></Lang>
+		<Lang><country>es</country>    <value>Gravedad</value></Lang>
+		<Lang><country>fr</country>    <value>Gravité</value></Lang>
+		<Lang><country>it</country>    <value>Gravità</value></Lang>
+		<Lang><country>ja</country>    <value>重大度</value></Lang>
+		<Lang><country>ko</country>    <value>심각도</value></Lang>
+		<Lang><country>pt-br</country> <value>Severidade</value></Lang>
+		<Lang><country>ru</country>    <value>Уровень серьезности</value></Lang>
+		<Lang><country>th</country>    <value>ระดับความรุนแรง</value></Lang>
+		<Lang><country>zh-cn</country> <value>严重性</value></Lang>
+		<Lang><country>zh_tw</country> <value>嚴重性</value></Lang>
+    </Severity>
+
+	<InternalNotes>
+		<Lang><country>en</country>    <value>Internal Notes</value></Lang>
+    </InternalNotes>
+
+	<Example>
+		<Lang><country>en</country>    <value>Example Message</value></Lang>
+    </Example>
+
+	<CIMMessageID>
+		<Lang><country>en</country>    <value>CIM Information</value></Lang>
+    </CIMMessageID>
+
+	<SystemImpact>
+		<Lang><country>en</country>    <value>System Impact</value></Lang>
+    </SystemImpact>
+
+	<LEDs>
+		<Lang><country>en</country>    <value>Chassis LED that is Lit</value></Lang>
+    </LEDs>
+	
+	<CalledHome>
+		<Lang><country>de</country>    <value>Unterstützung automatisch benachrichtigen</value></Lang>
+		<Lang><country>en</country>    <value>Automatically Notify Support</value></Lang>
+		<Lang><country>es</country>    <value>Notificar automáticamente al centro de soporte</value></Lang>
+		<Lang><country>fr</country>    <value>Avertir automatiquement le service de support</value></Lang>
+		<Lang><country>it</country>    <value>Avvisa automaticamente il supporto</value></Lang>
+		<Lang><country>ja</country>    <value>自動的にサポートに通知</value></Lang>
+		<Lang><country>ko</country>    <value>지원 자동 알림</value></Lang>
+		<Lang><country>pt-br</country> <value>Notificar o Suporte automaticamente</value></Lang>
+		<Lang><country>ru</country>    <value>Автоматическое уведомление службы поддержки</value></Lang>
+		<Lang><country>th</country>    <value>แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</value></Lang>
+		<Lang><country>zh-cn</country> <value>自动通知支持机构</value></Lang>
+		<Lang><country>zh_tw</country> <value>自動通知支援中心</value></Lang>
+    </CalledHome>
+ 
+	<UserAction>
+		<Lang><country>de</country>    <value>Benutzeraktion</value></Lang>
+		<Lang><country>en</country>    <value>User Response</value></Lang>
+		<Lang><country>es</country>    <value>Respuesta del usuario</value></Lang>
+		<Lang><country>fr</country>    <value>Réponse de l'utilisateur</value></Lang>
+		<Lang><country>it</country>    <value>Risposta utente</value></Lang>
+		<Lang><country>ja</country>    <value>ユーザー応答</value></Lang>
+		<Lang><country>ko</country>    <value>사용자 조치</value></Lang>
+		<Lang><country>pt-br</country> <value>Resposta do usuário</value></Lang>
+		<Lang><country>ru</country>    <value>Ответ пользователя</value></Lang>
+		<Lang><country>th</country>    <value>การตอบสนองจากผู้ใช้</value></Lang>
+		<Lang><country>zh-cn</country> <value>用户响应</value></Lang>
+		<Lang><country>zh_tw</country> <value>使用者回應</value></Lang>
+    </UserAction>
+ 
+ 	<RelatedLinks>
+		<Lang><country>en</country>    <value>Related Links</value></Lang>
+    </RelatedLinks>
+ 
+	<DateAdded>
+		<Lang><country>en</country>    <value>Date Message Added</value></Lang>
+    </DateAdded>
+ 
+	<DateReviewed>
+		<Lang><country>en</country>    <value>Reviewed</value></Lang>
+    </DateReviewed>
 
 
- <!--en>Arguments</en>	                          
-      <de>Argumente</de>
-      <es>Argumentos</es>
-      <fr>Arguments</fr>
-      <it>Argomenti</it>
-      <ja>引数</ja>
-      <ko>인수</ko>
-      <pt>Argumentos</pt>
-      <ru>Аргументы</ru>
-      <th>อาร์กิวเมนต์</th>
-      <zh>参数</zh>
-      <zh_HANT>引數</zh_HANT-->
-   </Arguments>
+<!-- 
+====================================================================
+The following values are by these scripts and output files: 
+	buildLxcaMessagesPDF.xsl  ->  messages_*_events_pdf_autogen.dita
+====================================================================
+-->
+
+ 	<EventsPDFTitle>
+		<Lang><country>de</country>    <value>Liste der Ereignisse <xsl:value-of select="$product"/></value></Lang>
+		<Lang><country>en</country>    <value>List of <xsl:value-of select="$product"/> events</value></Lang>
+		<Lang><country>es</country>    <value>Lista de <xsl:value-of select="$product"/> eventos/</value></Lang>
+		<Lang><country>fr</country>    <value>Liste des événements <xsl:value-of select="$product"/></value></Lang>
+		<Lang><country>it</country>    <value>Elenco di eventi <xsl:value-of select="$product"/></value></Lang>
+		<Lang><country>ja</country>    <value><xsl:value-of select="$product"/>イベントのリスト</value></Lang>
+		<Lang><country>ko</country>    <value><xsl:value-of select="$product"/>이벤트 목록</value></Lang>
+		<Lang><country>pt-br</country> <value>Lista de eventos <xsl:value-of select="$product"/></value></Lang>
+		<Lang><country>ru</country>    <value>Список <xsl:value-of select="$product"/> события</value></Lang>
+		<Lang><country>th</country>    <value>รายการกิจกรรม <xsl:value-of select="$product"/></value></Lang>
+		<Lang><country>zh-cn</country> <value><xsl:value-of select="$product"/>事件的列表</value></Lang>
+		<Lang><country>zh_tw</country> <value><xsl:value-of select="$product"/>事件的列表</value></Lang>
+    </EventsPDFTitle>
+
+ 	<EventsPDFShortdesc>
+		<Lang><country>de</country>    <value>In diesem Abschnitt werden alle <xsl:value-of select="$product"/> Ereignisse aufgelistet, die im XClarity Administrator-Ereignisprotokoll oder -Protokoll angezeigt werden können.</value></Lang>
+		<Lang><country>en</country>    <value>This section lists all <xsl:value-of select="$product"/> events that can be viewed in the XClarity Administrator event log or audit log.</value></Lang>
+		<Lang><country>es</country>    <value>Esta sección enumera todos los eventos <xsl:value-of select="$product"/> que se pueden ver en el registro de eventos o el registro de auditoría de XClarity Administrator.</value></Lang>
+		<Lang><country>fr</country>    <value>Cette section répertorie tous les événements <xsl:value-of select="$product"/> pouvant être affichés dans le journal des événements ou le journal d'audit de XClarity Administrator.</value></Lang>
+		<Lang><country>it</country>    <value>Questa sezione elenca tutti gli eventi <xsl:value-of select="$product"/> che possono essere visualizzati nel registro eventi di XClarity Administrator o nel log di controllo.</value></Lang>
+		<Lang><country>ja</country>    <value>このセクションでは、XClarity Administratorのイベントログまたは監査ログで表示できるすべての<xsl:value-of select="$product"/>イベントを一覧表示します。</value></Lang>
+		<Lang><country>ko</country>    <value>이 절에서는 Xclarity Administrator 이벤트 로그 또는 감사 로그에서 볼 수있는 <xsl:value-of select="$product"/> 이벤트를 모두 나열합니다.</value></Lang>
+		<Lang><country>pt-br</country> <value>Esta seção lista todos os eventos <xsl:value-of select="$product"/> que podem ser visualizados no log de eventos ou no log de auditoria do XClarity Administrator.</value></Lang>
+		<Lang><country>ru</country>    <value>В этом разделе перечислены все события <xsl:value-of select="$product"/>, которые можно просмотреть в журнале событий XClarity Administrator или журнале аудита.</value></Lang>
+		<Lang><country>th</country>    <value>ส่วนนี้จะแสดงเหตุการณ์ <xsl:value-of select="$product"/> ทั้งหมดที่สามารถดูได้ในบันทึกเหตุการณ์หรือบันทึกการตรวจสอบของ  XClarity Administrator</value></Lang>
+		<Lang><country>zh-cn</country> <value>本节列出了可在Lenovo XClarity Administrator事件日志或审核日志中查看的所有<xsl:value-of select="$product"/>事件。</value></Lang>
+		<Lang><country>zh_tw</country> <value>本節列出了可在Lenovo XClarity Administrator事件日誌或審核日誌中查看的所有<xsl:value-of select="$product"/>事件。</value></Lang>
+    </EventsPDFShortdesc>
+
+
+<!-- 
+====================================================================
+The following values are by these scripts and output files: 
+	lxca_severity.xsl.        ->  messages_*_eventsbyseverity_autogen.dita
+====================================================================
+--> 
+
+ 	<EventsSeverityTitle>
+		<Lang><country>de</country>    <value><xsl:value-of select="$product"/> ereignisse nach Schweregrad sortiert</value></Lang>
+		<Lang><country>en</country>    <value><xsl:value-of select="$product"/> events organized by severity</value></Lang>
+		<Lang><country>es</country>    <value>Sucesos <xsl:value-of select="$product"/> ordenados por gravedad</value></Lang>
+		<Lang><country>fr</country>    <value>Événements <xsl:value-of select="$product"/> classés par niveau de gravité</value></Lang>
+		<Lang><country>it</country>    <value>Eventi di <xsl:value-of select="$product"/> organizzati per gravità</value></Lang>
+		<Lang><country>ja</country>    <value>重大度別に整理された <xsl:value-of select="$product"/> イベント</value></Lang>
+		<Lang><country>ko</country>    <value>심각도별로 구성된 <xsl:value-of select="$product"/> 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Eventos do <xsl:value-of select="$product"/> organizados por gravidade</value></Lang>
+		<Lang><country>ru</country>    <value>События <xsl:value-of select="$product"/>, классифицированные по уровню серьезности</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์  <xsl:value-of select="$product"/>   ดเรียงตามความร้ายแรง</value></Lang>
+		<Lang><country>zh-cn</country> <value>按严重性排列的 <xsl:value-of select="$product"/> 事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>依嚴重性列出的 <xsl:value-of select="$product"/> 事件</value></Lang>
+    </EventsSeverityTitle>
+
+	<EventsSeverityShortdesc>
+		<Lang><country>de</country>    <value>Die Folgende Tabelle führt alle <xsl:value-of select="$product"/> Ereignisse nach Schweregrad sortiert auf (Information, Fehler und Warnung).</value></Lang>
+		<Lang><country>en</country>    <value>The following table lists all <xsl:value-of select="$product"/> events, organized by severity (Information, Error, and Warning).</value></Lang>
+		<Lang><country>es</country>    <value>La siguiente tabla enumera todos los sucesos de <xsl:value-of select="$product"/>, ordenados por gravedad (información, error y advertencia).</value></Lang>
+		<Lang><country>fr</country>    <value>Le tableau suivant répertorie tous les événements <xsl:value-of select="$product"/> classés par niveau de gravité (Information, Erreur et Avertissement).</value></Lang>
+		<Lang><country>it</country>    <value>Nella seguente tabella sono elencati tutti gli eventi <xsl:value-of select="$product"/> organizzati per gravità (informazioni, errori e avvertenze).</value></Lang>
+		<Lang><country>ja</country>    <value>以下の表はすべての <xsl:value-of select="$product"/> イベントを重大度別 (情報、エラー、警告) に整理してリストしています。</value></Lang>
+		<Lang><country>ko</country>    <value>다음 표에서는 심각도(정보, 오류 및 경고)별로 구성된 모든 <xsl:value-of select="$product"/> 이벤트를 나열합니다.</value></Lang>
+		<Lang><country>pt-br</country> <value>A tabela a seguir lista todos os eventos do <xsl:value-of select="$product"/>, organizados por gravidade (Informação, Erro e Aviso).</value></Lang>
+		<Lang><country>ru</country>    <value>В следующей таблице перечислены все события <xsl:value-of select="$product"/>, классифицированные по уровню серьезности (информационные, связанные с ошибками и предупреждения).</value></Lang>
+		<Lang><country>th</country>    <value>ตารางต่อไปนี้มีเหตุการณ์ <xsl:value-of select="$product"/> ทั้งหมดที่จัดเรียงตามความร้ายแรง (ข้อมูล ข้อผิดพลาด และคำเตือน)</value></Lang>
+		<Lang><country>zh-cn</country> <value>以下表格列出了所有按严重性（信息、错误和警告）排列的 <xsl:value-of select="$product"/> 事件。</value></Lang>
+		<Lang><country>zh_tw</country> <value>下表依嚴重性（資訊、錯誤和警告）列出所有的 <xsl:value-of select="$product"/> 事件。</value></Lang>
+    </EventsSeverityShortdesc>
+
+   <EventsBySeverity>
+      <en>Events organized by severity</en>
+      <de>Ereignisse nach Schweregrad sortiert</de>
+      <es>Sucesos ordenados por gravedad</es>
+      <fr>vénements classés par niveau de gravité</fr>	      
+      <it>Eventi organizzati per gravità</it>
+      <ja>重大度別に整理されたイベント</ja>
+      <ko>심각도별로 구성된 이벤트</ko>
+      <pt>Eventos organizados por gravidade</pt>
+      <ru>События, классифицированные по уровню серьезности</ru>
+      <th>เหตุการณ์ที่จัดเรียงตามความร้ายแรง</th>
+      <zh>按严重性排列的事件</zh>
+      <zh_HANT>依嚴重性列出的事件</zh_HANT>
+   </EventsBySeverity>
+
+ 	<EventID>
+		<Lang><country>de</country>    <value>Ereignis-ID</value></Lang>
+		<Lang><country>en</country>    <value>Event ID</value></Lang>
+		<Lang><country>es</country>    <value>ID de suceso</value></Lang>
+		<Lang><country>fr</country>    <value>ID événement</value></Lang>
+		<Lang><country>it</country>    <value>ID evento</value></Lang>
+		<Lang><country>ja</country>    <value>イベント ID</value></Lang>
+		<Lang><country>ko</country>    <value>이벤트 ID</value></Lang>
+		<Lang><country>pt-br</country> <value>ID de Evento</value></Lang>
+		<Lang><country>ru</country>    <value>ИД события</value></Lang>
+		<Lang><country>th</country>    <value>ID เหตุการณ์</value></Lang>
+		<Lang><country>zh-cn</country> <value>>事件标识</value></Lang>
+		<Lang><country>zh_tw</country> <value>事件 ID</value></Lang>
+    </EventID>
+
+ 	<MsgString>
+		<Lang><country>de</country>    <value>Meldung</value></Lang>
+		<Lang><country>en</country>    <value>Message String</value></Lang>
+		<Lang><country>es</country>    <value>Cadena del mensaje</value></Lang>
+		<Lang><country>fr</country>    <value>Chaîne de message</value></Lang>
+		<Lang><country>it</country>    <value>Stringa del messaggio</value></Lang>
+		<Lang><country>ja</country>    <value>メッセージ・ストリング</value></Lang>
+		<Lang><country>ko</country>    <value>메시지 문자열</value></Lang>
+		<Lang><country>pt-br</country> <value>Sequência de Mensagens</value></Lang>
+		<Lang><country>ru</country>    <value>Строка сообщения</value></Lang>
+		<Lang><country>th</country>    <value>สตริงข้อความ</value></Lang>
+		<Lang><country>zh-cn</country> <value>消息字符串</value></Lang>
+		<Lang><country>zh_tw</country> <value>訊息字串</value></Lang>
+    </MsgString>
+	
+
+<!-- 
+====================================================================
+The following values are by these scripts and output files: 
+	pullCallHomeEvents.xsl  ->  messages_*_callhome_events_autogen.dita
+====================================================================
+--> 
+
+   <EventsCallhomeTitle>
+		<Lang><country>de</country>    <value><xsl:value-of select="$product"/>-ereignisse, durch die der Support automatisch benachrichtigt wird</value></Lang>
+		<Lang><country>en</country>    <value><xsl:value-of select="$product"/> events that automatically notify Support</value></Lang>
+		<Lang><country>es</country>    <value>Sucesos <xsl:value-of select="$product"/> que notifican automáticamente al centro de soporte</value></Lang>
+		<Lang><country>fr</country>    <value>Événements <xsl:value-of select="$product"/> avertissant automatiquement le service de support</value></Lang>
+		<Lang><country>it</country>    <value>Eventi di <xsl:value-of select="$product"/> che avvisano automaticamente il supporto</value></Lang>
+		<Lang><country>ja</country>    <value>自動的にサポートに通知される <xsl:value-of select="$product"/> イベント</value></Lang>
+		<Lang><country>ko</country>    <value>지원 알림을 자동으로 보내는 <xsl:value-of select="$product"/> 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Eventos do <xsl:value-of select="$product"/> que notificam o Suporte automaticamente</value></Lang>
+		<Lang><country>ru</country>    <value>События <xsl:value-of select="$product"/>, которые автоматически уведомляют службу поддержки</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์ <xsl:value-of select="$product"/> ที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</value></Lang>
+		<Lang><country>zh-cn</country> <value>自动通知支持机构的 <xsl:value-of select="$product"/> 事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>會自動通知支援中心的 <xsl:value-of select="$product"/> 事件</value></Lang>
+   </EventsCallhomeTitle>
+
+   <EventsCallhomeShortdesc>
+ 		<Lang><country>de</country>    <value>Sie können XClarity Administrator so konfigurieren, dass der Support automatisch benachrichtigt wird (auch als <term>Call-Home-Funktion</term> bezeichnet), wenn bestimmte <xsl:value-of select="$product"/>-Fehlertypen auftreten. Wenn Sie diese Funktion konfiguriert haben, finden Sie in der Tabelle eine Liste der Ereignisse, durch die der Support automatisch benachrichtigt wird.</value></Lang>
+		<Lang><country>en</country>    <value>You can configure the XClarity Administrator to automatically notify Support (also known as <i>Call Home</i>) if certain types of <xsl:value-of select="$product"/> errors are encountered. If you have configured this function, see the table for a list of events that automatically notify Support.</value></Lang>
+		<Lang><country>es</country>    <value>Puede configurar el XClarity Administrator para notificar automáticamente al centro de soporte (también conocido como <term>Llamar a casa</term>) si se encuentra determinados tipos de errores de <xsl:value-of select="$product"/>. Si configuró está función, consulte la tabla para obtener una lista de los sucesos que notifican automáticamente al centro de soporte.</value></Lang>
+		<Lang><country>fr</country>    <value>Vous pouvez configurer XClarity Administrator pour avertir automatiquement le service de support (aussi appelé <term>appel vers Lenovo</term>) si vous rencontrez certains types d'erreur <xsl:value-of select="$product"/>. Si vous avez configuré cette fonction, consultez la table pour la liste d'événements qui avertit automatiquement le service de support.</value></Lang>
+		<Lang><country>it</country>    <value>XClarity Administrator può essere configurato in modo da avvisare automaticamente il supporto (funzione nota anche come <term>call home</term>) nel caso in cui si verifichino alcuni tipi di errori di <xsl:value-of select="$product"/>. Se questa funzione è stata configurata, fare riferimento alla tabella per conoscere l'elenco di eventi che avvisano automaticamente il supporto.</value></Lang>
+		<Lang><country>ja</country>    <value>特定のタイプの <xsl:value-of select="$product"/> エラーが発生した場合に自動的にサポートに通知するよう (<term>コール・ホーム</term> とも呼ばれます)、XClarity Administrator を構成することができます。この機能を構成してある場合、自動的にサポートに通知されるイベントのリストについては、表を参照してください。</value></Lang>
+		<Lang><country>ko</country>    <value>특정 유형의 <xsl:value-of select="$product"/> 오류가 발생한 경우 <term>콜 홈</term>이라고도 하는 지원 알림을 자동으로 보내도록 XClarity Administrator를 구성할 수 있습니다. 이 기능을 구성한 경우 지원 자동 알림 이벤트 목록 표를 참조하십시오.</value></Lang>
+		<Lang><country>pt-br</country> <value>É possível configurar o XClarity Administrator para notificar o Suporte automaticamente (também conhecido como <term>Call Home</term>) caso determinados tipos de erros do <xsl:value-of select="$product"/> sejam encontrados. Caso já tenha configurado essa função, consulte a tabela para obter uma lista de eventos que notificam o Suporte automaticamente.</value></Lang>
+		<Lang><country>ru</country>    <value>XClarity Administrator можно настроить для автоматического уведомления службы поддержки (также называется <term>Call Home</term>) при возникновении определенных типов ошибок <xsl:value-of select="$product"/>. Если вы включили эту функцию, в таблице можно посмотреть список событий, автоматически уведомляющих службу поддержки.</value></Lang>
+		<Lang><country>th</country>    <value>คุณสามารถกำหนดค่า XClarity Administrator เพื่อแจ้งฝ่ายสนับสนุนโดยอัตโนมัติ (หรือที่เรียกว่า    <term>Call Home</term>) หากพบข้อผิดพลาดบางประเภทเกี่ยวกับ <xsl:value-of select="$product"/> หากคุณกำหนดค่าฟังก์ชันนี้แล้ว ให้ดูตารางแสดงรายการเหตุการณ์ที่แจ้งฝ่ายสนับสนุนอัตโนมัติ</value></Lang>
+		<Lang><country>zh-cn</country> <value>可配置 XClarity Administrator，使其在遇到某些类型的 <xsl:value-of select="$product"/> 错误时自动通知支持机构（也称为 <term>Call Home</term >）。如果配置了此功能，请参阅下表以了解会自动通知支持的事件的列表。</value></Lang>
+		<Lang><country>zh_tw</country> <value>您可以配置 XClarity Administrator 在發生某些類型的 <xsl:value-of select="$product"/> 錯誤時，自動通知支援中心（亦稱為 <term>Call Home</term>）。您如有配置此功能，請參閱下表所列，會自動通知支援中心的事件清單。</value></Lang>
+   </EventsCallhomeShortdesc>
+
+ 
+   <EventsByCallhome>
+		<Lang><country>de</country>    <value>Ereignisse, durch die der Unterstützung automatisch benachrichtigt wird</value></Lang>
+		<Lang><country>en</country>    <value>Events that automatically notify Support</value></Lang>
+		<Lang><country>es</country>    <value>Sucesos que notifican automáticamente al centro de soporte</value></Lang>
+		<Lang><country>fr</country>    <value>Événements avertissant automatiquement le service de support</value></Lang>
+		<Lang><country>it</country>    <value>Eventi che avvisano automaticamente il supporto</value></Lang>
+		<Lang><country>ja</country>    <value>自動的にサポートに通知されるイベント</value></Lang>
+		<Lang><country>ko</country>    <value>지원 자동 알림 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Eventos que notificam automaticamente o Suporte</value></Lang>
+		<Lang><country>ru</country>    <value>События, которые автоматически уведомляют службу поддержки</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์ที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</value></Lang>
+		<Lang><country>zh-cn</country> <value>自动通知支持机构的事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>會自動通知支援中心的事件</value></Lang>
+   </EventsByCallhome>
+
+   
+   
+<!-- 
+====================================================================
+These might tnot be neeeded. 
+====================================================================
+--> 
+
+  	<Yes>
+		<Lang><country>de</country>    <value>Ja</value></Lang>
+		<Lang><country>en</country>    <value>Yes</value></Lang>
+		<Lang><country>es</country>    <value>Sí</value></Lang>
+		<Lang><country>fr</country>    <value>Oui</value></Lang>
+		<Lang><country>it</country>    <value>Sì</value></Lang>
+		<Lang><country>ja</country>    <value>はい</value></Lang>
+		<Lang><country>ko</country>    <value>예</value></Lang>
+		<Lang><country>pt-br</country> <value>Sim</value></Lang>
+		<Lang><country>ru</country>    <value>Да</value></Lang>
+		<Lang><country>th</country>    <value>ใช่</value></Lang>
+		<Lang><country>zh-cn</country> <value>是</value></Lang>
+		<Lang><country>zh_tw</country> <value>是</value></Lang>
+    </Yes>
+
+   	<No>
+		<Lang><country>de</country>    <value>Es werden keine</value></Lang>
+		<Lang><country>en</country>    <value>No</value></Lang>
+		<Lang><country>es</country>    <value>No</value></Lang>
+		<Lang><country>fr</country>    <value>Non</value></Lang>
+		<Lang><country>it</country>    <value>No</value></Lang>
+		<Lang><country>ja</country>    <value>いいえ</value></Lang>
+		<Lang><country>ko</country>    <value>아니요</value></Lang>
+		<Lang><country>pt-br</country> <value>Não</value></Lang>
+		<Lang><country>ru</country>    <value>Нет</value></Lang>
+		<Lang><country>th</country>    <value>ไม่</value></Lang>
+		<Lang><country>zh-cn</country> <value>否</value></Lang>
+		<Lang><country>zh_tw</country> <value>否</value></Lang>
+    </No>
+
+   	<Informational>
+		<Lang><country>de</country>    <value>Information</value></Lang>
+		<Lang><country>en</country>    <value>Informational</value></Lang>
+		<Lang><country>es</country>    <value>Informativo</value></Lang>
+		<Lang><country>fr</country>    <value>Information</value></Lang>
+		<Lang><country>it</country>    <value>Informativo</value></Lang>
+		<Lang><country>ja</country>    <value>通知</value></Lang>
+		<Lang><country>ko</country>    <value>정보</value></Lang>
+		<Lang><country>pt-br</country> <value>Informativo</value></Lang>
+		<Lang><country>ru</country>    <value>Информационное оповещение</value></Lang>
+		<Lang><country>th</country>    <value>ให้ข้อมูล</value></Lang>
+		<Lang><country>zh-cn</country> <value>参考</value></Lang>
+		<Lang><country>zh_tw</country> <value>參考資訊</value></Lang>
+    </Informational>
+
+   	<Warning>
+		<Lang><country>de</country>    <value>Warnung</value></Lang>
+		<Lang><country>en</country>    <value>Warning</value></Lang>
+		<Lang><country>es</country>    <value>Advertencia</value></Lang>
+		<Lang><country>fr</country>    <value>Avertissement</value></Lang>
+		<Lang><country>it</country>    <value>Avvertenza</value></Lang>
+		<Lang><country>ja</country>    <value>警告</value></Lang>
+		<Lang><country>ko</country>    <value>경고</value></Lang>
+		<Lang><country>pt-br</country> <value>Aviso</value></Lang>
+		<Lang><country>ru</country>    <value>Предупреждение</value></Lang>
+		<Lang><country>th</country>    <value>คำเตือน</value></Lang>
+		<Lang><country>zh-cn</country> <value>警告</value></Lang>
+		<Lang><country>zh_tw</country> <value>警告</value></Lang>
+    </Warning>
+
+   	<Error>
+		<Lang><country>de</country>    <value>Fehler</value></Lang>
+		<Lang><country>en</country>    <value>Error</value></Lang>
+		<Lang><country>es</country>    <value>Error</value></Lang>
+		<Lang><country>fr</country>    <value>Erreur</value></Lang>
+		<Lang><country>it</country>    <value>Errore</value></Lang>
+		<Lang><country>ja</country>    <value>エラー</value></Lang>
+		<Lang><country>ko</country>    <value>오류</value></Lang>
+		<Lang><country>pt-br</country> <value>Erro</value></Lang>
+		<Lang><country>ru</country>    <value>Ошибка</value></Lang>
+		<Lang><country>th</country>    <value>ข้อผิดพลาด</value></Lang>
+		<Lang><country>zh-cn</country> <value>错误</value></Lang>
+		<Lang><country>zh_tw</country> <value>錯誤</value></Lang>
+    </Error>
+
 </auto_message_text>
