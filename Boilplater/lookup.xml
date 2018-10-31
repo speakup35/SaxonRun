@@ -16,15 +16,34 @@ For consistency, the same codes are used in this XML.
 
 <auto_message_text>
 
+ 
 <!-- 
 ==========================================================================
-If the language is not available, use en by default. 
+The following values are by these scripts and output files: 
+	buildLxcaMessagesPDF.xsl  ->  messages_*_events_pdf_autogen.dita
+	lxca_severity.xsl.        ->  messages_*_eventsbyseverity_autogen.dita
+	pullCallHomeEvents.xsl    ->  messages_*_callhome_events_autogen.dita
 
+These values are based on the $product variable that is passed to the XSL script.
+==========================================================================
+-->
+
+   	<Product>
+		<XClarity><Value>Lenovo XClarity Administrator</Value></XClarity>
+		<Storage><Value>Lenovo Storage</Value></Storage>
+		<RackSwitch><Value>Lenovo RackSwitch</Value></RackSwitch>
+		<ThinkServer><Value>ThinkServer</Value></ThinkServer>
+   	</Product>
+
+<!-- 
+==========================================================================
 The following values are by these scripts and output files: 
 	convertSTGxml.xsl         ->  FQX*.dita
 	buildLxcaMessagesPDF.xsl  ->  messages_*_events_pdf_autogen.dita
 	lxca_severity.xsl.        ->  messages_*_eventsbyseverity_autogen.dita
-	pullCallHomeEvents.xsl  ->  messages_*_callhome_events_autogen.dita
+	pullCallHomeEvents.xsl    ->  messages_*_callhome_events_autogen.dita
+
+If the language is not available, use "en" by default. 
 ==========================================================================
 -->
 
@@ -194,33 +213,33 @@ The following values are by these scripts and output files:
 -->
 
  	<EventsPDFTitle>
-		<Lang><country>de</country>    <value>Liste der Ereignisse <xsl:value-of select="$product"/></value></Lang>
-		<Lang><country>en</country>    <value>List of <xsl:value-of select="$product"/> events</value></Lang>
-		<Lang><country>es</country>    <value>Lista de <xsl:value-of select="$product"/> eventos/</value></Lang>
-		<Lang><country>fr</country>    <value>Liste des événements <xsl:value-of select="$product"/></value></Lang>
-		<Lang><country>it</country>    <value>Elenco di eventi <xsl:value-of select="$product"/></value></Lang>
-		<Lang><country>ja</country>    <value><xsl:value-of select="$product"/>イベントのリスト</value></Lang>
-		<Lang><country>ko</country>    <value><xsl:value-of select="$product"/>이벤트 목록</value></Lang>
-		<Lang><country>pt-br</country> <value>Lista de eventos <xsl:value-of select="$product"/></value></Lang>
-		<Lang><country>ru</country>    <value>Список <xsl:value-of select="$product"/> события</value></Lang>
-		<Lang><country>th</country>    <value>รายการกิจกรรม <xsl:value-of select="$product"/></value></Lang>
-		<Lang><country>zh-cn</country> <value><xsl:value-of select="$product"/>事件的列表</value></Lang>
-		<Lang><country>zh_tw</country> <value><xsl:value-of select="$product"/>事件的列表</value></Lang>
+		<Lang><country>de</country>    <value>Liste der Ereignisse <Product/></value></Lang>
+		<Lang><country>en</country>    <value>List of <Product/> events</value></Lang>
+		<Lang><country>es</country>    <value>Lista de <Product/> eventos/</value></Lang>
+		<Lang><country>fr</country>    <value>Liste des événements <Product/></value></Lang>
+		<Lang><country>it</country>    <value>Elenco di eventi <Product/></value></Lang>
+		<Lang><country>ja</country>    <value><Product/>イベントのリスト</value></Lang>
+		<Lang><country>ko</country>    <value><Product/>이벤트 목록</value></Lang>
+		<Lang><country>pt-br</country> <value>Lista de eventos <Product/></value></Lang>
+		<Lang><country>ru</country>    <value>Список <Product/> события</value></Lang>
+		<Lang><country>th</country>    <value>รายการกิจกรรม <Product/></value></Lang>
+		<Lang><country>zh-cn</country> <value><Product/>事件的列表</value></Lang>
+		<Lang><country>zh_tw</country> <value><Product/>事件的列表</value></Lang>
     </EventsPDFTitle>
 
  	<EventsPDFShortdesc>
-		<Lang><country>de</country>    <value>In diesem Abschnitt werden alle <xsl:value-of select="$product"/> Ereignisse aufgelistet, die im XClarity Administrator-Ereignisprotokoll oder -Protokoll angezeigt werden können.</value></Lang>
-		<Lang><country>en</country>    <value>This section lists all <xsl:value-of select="$product"/> events that can be viewed in the XClarity Administrator event log or audit log.</value></Lang>
-		<Lang><country>es</country>    <value>Esta sección enumera todos los eventos <xsl:value-of select="$product"/> que se pueden ver en el registro de eventos o el registro de auditoría de XClarity Administrator.</value></Lang>
-		<Lang><country>fr</country>    <value>Cette section répertorie tous les événements <xsl:value-of select="$product"/> pouvant être affichés dans le journal des événements ou le journal d'audit de XClarity Administrator.</value></Lang>
-		<Lang><country>it</country>    <value>Questa sezione elenca tutti gli eventi <xsl:value-of select="$product"/> che possono essere visualizzati nel registro eventi di XClarity Administrator o nel log di controllo.</value></Lang>
-		<Lang><country>ja</country>    <value>このセクションでは、XClarity Administratorのイベントログまたは監査ログで表示できるすべての<xsl:value-of select="$product"/>イベントを一覧表示します。</value></Lang>
-		<Lang><country>ko</country>    <value>이 절에서는 Xclarity Administrator 이벤트 로그 또는 감사 로그에서 볼 수있는 <xsl:value-of select="$product"/> 이벤트를 모두 나열합니다.</value></Lang>
-		<Lang><country>pt-br</country> <value>Esta seção lista todos os eventos <xsl:value-of select="$product"/> que podem ser visualizados no log de eventos ou no log de auditoria do XClarity Administrator.</value></Lang>
-		<Lang><country>ru</country>    <value>В этом разделе перечислены все события <xsl:value-of select="$product"/>, которые можно просмотреть в журнале событий XClarity Administrator или журнале аудита.</value></Lang>
-		<Lang><country>th</country>    <value>ส่วนนี้จะแสดงเหตุการณ์ <xsl:value-of select="$product"/> ทั้งหมดที่สามารถดูได้ในบันทึกเหตุการณ์หรือบันทึกการตรวจสอบของ  XClarity Administrator</value></Lang>
-		<Lang><country>zh-cn</country> <value>本节列出了可在Lenovo XClarity Administrator事件日志或审核日志中查看的所有<xsl:value-of select="$product"/>事件。</value></Lang>
-		<Lang><country>zh_tw</country> <value>本節列出了可在Lenovo XClarity Administrator事件日誌或審核日誌中查看的所有<xsl:value-of select="$product"/>事件。</value></Lang>
+		<Lang><country>de</country>    <value>In diesem Abschnitt werden alle <Product/> Ereignisse aufgelistet, die im XClarity Administrator-Ereignisprotokoll oder -Protokoll angezeigt werden können.</value></Lang>
+		<Lang><country>en</country>    <value>This section lists all <Product/> events that can be viewed in the XClarity Administrator event log or audit log.</value></Lang>
+		<Lang><country>es</country>    <value>Esta sección enumera todos los eventos <Product/> que se pueden ver en el registro de eventos o el registro de auditoría de XClarity Administrator.</value></Lang>
+		<Lang><country>fr</country>    <value>Cette section répertorie tous les événements <Product/> pouvant être affichés dans le journal des événements ou le journal d'audit de XClarity Administrator.</value></Lang>
+		<Lang><country>it</country>    <value>Questa sezione elenca tutti gli eventi <Product/> che possono essere visualizzati nel registro eventi di XClarity Administrator o nel log di controllo.</value></Lang>
+		<Lang><country>ja</country>    <value>このセクションでは、XClarity Administratorのイベントログまたは監査ログで表示できるすべての<Product/>イベントを一覧表示します。</value></Lang>
+		<Lang><country>ko</country>    <value>이 절에서는 Xclarity Administrator 이벤트 로그 또는 감사 로그에서 볼 수있는 <Product/> 이벤트를 모두 나열합니다.</value></Lang>
+		<Lang><country>pt-br</country> <value>Esta seção lista todos os eventos <Product/> que podem ser visualizados no log de eventos ou no log de auditoria do XClarity Administrator.</value></Lang>
+		<Lang><country>ru</country>    <value>В этом разделе перечислены все события <Product/>, которые можно просмотреть в журнале событий XClarity Administrator или журнале аудита.</value></Lang>
+		<Lang><country>th</country>    <value>ส่วนนี้จะแสดงเหตุการณ์ <Product/> ทั้งหมดที่สามารถดูได้ในบันทึกเหตุการณ์หรือบันทึกการตรวจสอบของ  XClarity Administrator</value></Lang>
+		<Lang><country>zh-cn</country> <value>本节列出了可在Lenovo XClarity Administrator事件日志或审核日志中查看的所有<Product/>事件。</value></Lang>
+		<Lang><country>zh_tw</country> <value>本節列出了可在Lenovo XClarity Administrator事件日誌或審核日誌中查看的所有<Product/>事件。</value></Lang>
     </EventsPDFShortdesc>
 
 
@@ -232,48 +251,48 @@ The following values are by these scripts and output files:
 --> 
 
  	<EventsSeverityTitle>
-		<Lang><country>de</country>    <value><xsl:value-of select="$product"/> ereignisse nach Schweregrad sortiert</value></Lang>
-		<Lang><country>en</country>    <value><xsl:value-of select="$product"/> events organized by severity</value></Lang>
-		<Lang><country>es</country>    <value>Sucesos <xsl:value-of select="$product"/> ordenados por gravedad</value></Lang>
-		<Lang><country>fr</country>    <value>Événements <xsl:value-of select="$product"/> classés par niveau de gravité</value></Lang>
-		<Lang><country>it</country>    <value>Eventi di <xsl:value-of select="$product"/> organizzati per gravità</value></Lang>
-		<Lang><country>ja</country>    <value>重大度別に整理された <xsl:value-of select="$product"/> イベント</value></Lang>
-		<Lang><country>ko</country>    <value>심각도별로 구성된 <xsl:value-of select="$product"/> 이벤트</value></Lang>
-		<Lang><country>pt-br</country> <value>Eventos do <xsl:value-of select="$product"/> organizados por gravidade</value></Lang>
-		<Lang><country>ru</country>    <value>События <xsl:value-of select="$product"/>, классифицированные по уровню серьезности</value></Lang>
-		<Lang><country>th</country>    <value>เหตุการณ์  <xsl:value-of select="$product"/>   ดเรียงตามความร้ายแรง</value></Lang>
-		<Lang><country>zh-cn</country> <value>按严重性排列的 <xsl:value-of select="$product"/> 事件</value></Lang>
-		<Lang><country>zh_tw</country> <value>依嚴重性列出的 <xsl:value-of select="$product"/> 事件</value></Lang>
+		<Lang><country>de</country>    <value><Product/> ereignisse nach Schweregrad sortiert</value></Lang>
+		<Lang><country>en</country>    <value><Product/> events organized by severity</value></Lang>
+		<Lang><country>es</country>    <value>Sucesos <Product/> ordenados por gravedad</value></Lang>
+		<Lang><country>fr</country>    <value>Événements <Product/> classés par niveau de gravité</value></Lang>
+		<Lang><country>it</country>    <value>Eventi di <Product/> organizzati per gravità</value></Lang>
+		<Lang><country>ja</country>    <value>重大度別に整理された <Product/> イベント</value></Lang>
+		<Lang><country>ko</country>    <value>심각도별로 구성된 <Product/> 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Eventos do <Product/> organizados por gravidade</value></Lang>
+		<Lang><country>ru</country>    <value>События <Product/>, классифицированные по уровню серьезности</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์  <Product/>   ดเรียงตามความร้ายแรง</value></Lang>
+		<Lang><country>zh-cn</country> <value>按严重性排列的 <Product/> 事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>依嚴重性列出的 <Product/> 事件</value></Lang>
     </EventsSeverityTitle>
 
 	<EventsSeverityShortdesc>
-		<Lang><country>de</country>    <value>Die Folgende Tabelle führt alle <xsl:value-of select="$product"/> Ereignisse nach Schweregrad sortiert auf (Information, Fehler und Warnung).</value></Lang>
-		<Lang><country>en</country>    <value>The following table lists all <xsl:value-of select="$product"/> events, organized by severity (Information, Error, and Warning).</value></Lang>
-		<Lang><country>es</country>    <value>La siguiente tabla enumera todos los sucesos de <xsl:value-of select="$product"/>, ordenados por gravedad (información, error y advertencia).</value></Lang>
-		<Lang><country>fr</country>    <value>Le tableau suivant répertorie tous les événements <xsl:value-of select="$product"/> classés par niveau de gravité (Information, Erreur et Avertissement).</value></Lang>
-		<Lang><country>it</country>    <value>Nella seguente tabella sono elencati tutti gli eventi <xsl:value-of select="$product"/> organizzati per gravità (informazioni, errori e avvertenze).</value></Lang>
-		<Lang><country>ja</country>    <value>以下の表はすべての <xsl:value-of select="$product"/> イベントを重大度別 (情報、エラー、警告) に整理してリストしています。</value></Lang>
-		<Lang><country>ko</country>    <value>다음 표에서는 심각도(정보, 오류 및 경고)별로 구성된 모든 <xsl:value-of select="$product"/> 이벤트를 나열합니다.</value></Lang>
-		<Lang><country>pt-br</country> <value>A tabela a seguir lista todos os eventos do <xsl:value-of select="$product"/>, organizados por gravidade (Informação, Erro e Aviso).</value></Lang>
-		<Lang><country>ru</country>    <value>В следующей таблице перечислены все события <xsl:value-of select="$product"/>, классифицированные по уровню серьезности (информационные, связанные с ошибками и предупреждения).</value></Lang>
-		<Lang><country>th</country>    <value>ตารางต่อไปนี้มีเหตุการณ์ <xsl:value-of select="$product"/> ทั้งหมดที่จัดเรียงตามความร้ายแรง (ข้อมูล ข้อผิดพลาด และคำเตือน)</value></Lang>
-		<Lang><country>zh-cn</country> <value>以下表格列出了所有按严重性（信息、错误和警告）排列的 <xsl:value-of select="$product"/> 事件。</value></Lang>
-		<Lang><country>zh_tw</country> <value>下表依嚴重性（資訊、錯誤和警告）列出所有的 <xsl:value-of select="$product"/> 事件。</value></Lang>
+		<Lang><country>de</country>    <value>Die Folgende Tabelle führt alle <Product/> Ereignisse nach Schweregrad sortiert auf (Information, Fehler und Warnung).</value></Lang>
+		<Lang><country>en</country>    <value>The following table lists all <Product/> events, organized by severity (Information, Error, and Warning).</value></Lang>
+		<Lang><country>es</country>    <value>La siguiente tabla enumera todos los sucesos de <Product/>, ordenados por gravedad (información, error y advertencia).</value></Lang>
+		<Lang><country>fr</country>    <value>Le tableau suivant répertorie tous les événements <Product/> classés par niveau de gravité (Information, Erreur et Avertissement).</value></Lang>
+		<Lang><country>it</country>    <value>Nella seguente tabella sono elencati tutti gli eventi <Product/> organizzati per gravità (informazioni, errori e avvertenze).</value></Lang>
+		<Lang><country>ja</country>    <value>以下の表はすべての <Product/> イベントを重大度別 (情報、エラー、警告) に整理してリストしています。</value></Lang>
+		<Lang><country>ko</country>    <value>다음 표에서는 심각도(정보, 오류 및 경고)별로 구성된 모든 <Product/> 이벤트를 나열합니다.</value></Lang>
+		<Lang><country>pt-br</country> <value>A tabela a seguir lista todos os eventos do <Product/>, organizados por gravidade (Informação, Erro e Aviso).</value></Lang>
+		<Lang><country>ru</country>    <value>В следующей таблице перечислены все события <Product/>, классифицированные по уровню серьезности (информационные, связанные с ошибками и предупреждения).</value></Lang>
+		<Lang><country>th</country>    <value>ตารางต่อไปนี้มีเหตุการณ์ <Product/> ทั้งหมดที่จัดเรียงตามความร้ายแรง (ข้อมูล ข้อผิดพลาด และคำเตือน)</value></Lang>
+		<Lang><country>zh-cn</country> <value>以下表格列出了所有按严重性（信息、错误和警告）排列的 <Product/> 事件。</value></Lang>
+		<Lang><country>zh_tw</country> <value>下表依嚴重性（資訊、錯誤和警告）列出所有的 <Product/> 事件。</value></Lang>
     </EventsSeverityShortdesc>
 
    <EventsBySeverity>
-      <en>Events organized by severity</en>
-      <de>Ereignisse nach Schweregrad sortiert</de>
-      <es>Sucesos ordenados por gravedad</es>
-      <fr>vénements classés par niveau de gravité</fr>	      
-      <it>Eventi organizzati per gravità</it>
-      <ja>重大度別に整理されたイベント</ja>
-      <ko>심각도별로 구성된 이벤트</ko>
-      <pt>Eventos organizados por gravidade</pt>
-      <ru>События, классифицированные по уровню серьезности</ru>
-      <th>เหตุการณ์ที่จัดเรียงตามความร้ายแรง</th>
-      <zh>按严重性排列的事件</zh>
-      <zh_HANT>依嚴重性列出的事件</zh_HANT>
+		<Lang><country>de</country>    <value>Ereignisse nach Schweregrad sortiert</value></Lang>
+		<Lang><country>en</country>    <value>Events organized by severity</value></Lang>
+		<Lang><country>es</country>    <value>Sucesos ordenados por gravedad</value></Lang>
+		<Lang><country>fr</country>    <value>Evénements classés par niveau de gravité</value></Lang>
+		<Lang><country>it</country>    <value>Eventi organizzati per gravità</value></Lang>
+		<Lang><country>ja</country>    <value>重大度別に整理されたイベント</value></Lang>
+		<Lang><country>ko</country>    <value>심각도별로 구성된 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Eventos organizados por gravidade</value></Lang>
+		<Lang><country>ru</country>    <value>События, классифицированные по уровню серьезности</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์ที่จัดเรียงตามความร้ายแรง</value></Lang>
+		<Lang><country>zh-cn</country> <value>>按严重性排列的事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>依嚴重性列出的事件</value></Lang>
    </EventsBySeverity>
 
  	<EventID>
@@ -315,33 +334,33 @@ The following values are by these scripts and output files:
 --> 
 
    <EventsCallhomeTitle>
-		<Lang><country>de</country>    <value><xsl:value-of select="$product"/>-ereignisse, durch die der Support automatisch benachrichtigt wird</value></Lang>
-		<Lang><country>en</country>    <value><xsl:value-of select="$product"/> events that automatically notify Support</value></Lang>
-		<Lang><country>es</country>    <value>Sucesos <xsl:value-of select="$product"/> que notifican automáticamente al centro de soporte</value></Lang>
-		<Lang><country>fr</country>    <value>Événements <xsl:value-of select="$product"/> avertissant automatiquement le service de support</value></Lang>
-		<Lang><country>it</country>    <value>Eventi di <xsl:value-of select="$product"/> che avvisano automaticamente il supporto</value></Lang>
-		<Lang><country>ja</country>    <value>自動的にサポートに通知される <xsl:value-of select="$product"/> イベント</value></Lang>
-		<Lang><country>ko</country>    <value>지원 알림을 자동으로 보내는 <xsl:value-of select="$product"/> 이벤트</value></Lang>
-		<Lang><country>pt-br</country> <value>Eventos do <xsl:value-of select="$product"/> que notificam o Suporte automaticamente</value></Lang>
-		<Lang><country>ru</country>    <value>События <xsl:value-of select="$product"/>, которые автоматически уведомляют службу поддержки</value></Lang>
-		<Lang><country>th</country>    <value>เหตุการณ์ <xsl:value-of select="$product"/> ที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</value></Lang>
-		<Lang><country>zh-cn</country> <value>自动通知支持机构的 <xsl:value-of select="$product"/> 事件</value></Lang>
-		<Lang><country>zh_tw</country> <value>會自動通知支援中心的 <xsl:value-of select="$product"/> 事件</value></Lang>
+		<Lang><country>de</country>    <value><Product/>-ereignisse, durch die der Support automatisch benachrichtigt wird</value></Lang>
+		<Lang><country>en</country>    <value><Product/> events that automatically notify Support</value></Lang>
+		<Lang><country>es</country>    <value>Sucesos <Product/> que notifican automáticamente al centro de soporte</value></Lang>
+		<Lang><country>fr</country>    <value>Événements <Product/> avertissant automatiquement le service de support</value></Lang>
+		<Lang><country>it</country>    <value>Eventi di <Product/> che avvisano automaticamente il supporto</value></Lang>
+		<Lang><country>ja</country>    <value>自動的にサポートに通知される <Product/> イベント</value></Lang>
+		<Lang><country>ko</country>    <value>지원 알림을 자동으로 보내는 <Product/> 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Eventos do <Product/> que notificam o Suporte automaticamente</value></Lang>
+		<Lang><country>ru</country>    <value>События <Product/>, которые автоматически уведомляют службу поддержки</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์ <Product/> ที่แจ้งฝ่ายสนับสนุนโดยอัตโนมัติ</value></Lang>
+		<Lang><country>zh-cn</country> <value>自动通知支持机构的 <Product/> 事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>會自動通知支援中心的 <Product/> 事件</value></Lang>
    </EventsCallhomeTitle>
 
    <EventsCallhomeShortdesc>
- 		<Lang><country>de</country>    <value>Sie können XClarity Administrator so konfigurieren, dass der Support automatisch benachrichtigt wird (auch als <term>Call-Home-Funktion</term> bezeichnet), wenn bestimmte <xsl:value-of select="$product"/>-Fehlertypen auftreten. Wenn Sie diese Funktion konfiguriert haben, finden Sie in der Tabelle eine Liste der Ereignisse, durch die der Support automatisch benachrichtigt wird.</value></Lang>
-		<Lang><country>en</country>    <value>You can configure the XClarity Administrator to automatically notify Support (also known as <i>Call Home</i>) if certain types of <xsl:value-of select="$product"/> errors are encountered. If you have configured this function, see the table for a list of events that automatically notify Support.</value></Lang>
-		<Lang><country>es</country>    <value>Puede configurar el XClarity Administrator para notificar automáticamente al centro de soporte (también conocido como <term>Llamar a casa</term>) si se encuentra determinados tipos de errores de <xsl:value-of select="$product"/>. Si configuró está función, consulte la tabla para obtener una lista de los sucesos que notifican automáticamente al centro de soporte.</value></Lang>
-		<Lang><country>fr</country>    <value>Vous pouvez configurer XClarity Administrator pour avertir automatiquement le service de support (aussi appelé <term>appel vers Lenovo</term>) si vous rencontrez certains types d'erreur <xsl:value-of select="$product"/>. Si vous avez configuré cette fonction, consultez la table pour la liste d'événements qui avertit automatiquement le service de support.</value></Lang>
-		<Lang><country>it</country>    <value>XClarity Administrator può essere configurato in modo da avvisare automaticamente il supporto (funzione nota anche come <term>call home</term>) nel caso in cui si verifichino alcuni tipi di errori di <xsl:value-of select="$product"/>. Se questa funzione è stata configurata, fare riferimento alla tabella per conoscere l'elenco di eventi che avvisano automaticamente il supporto.</value></Lang>
-		<Lang><country>ja</country>    <value>特定のタイプの <xsl:value-of select="$product"/> エラーが発生した場合に自動的にサポートに通知するよう (<term>コール・ホーム</term> とも呼ばれます)、XClarity Administrator を構成することができます。この機能を構成してある場合、自動的にサポートに通知されるイベントのリストについては、表を参照してください。</value></Lang>
-		<Lang><country>ko</country>    <value>특정 유형의 <xsl:value-of select="$product"/> 오류가 발생한 경우 <term>콜 홈</term>이라고도 하는 지원 알림을 자동으로 보내도록 XClarity Administrator를 구성할 수 있습니다. 이 기능을 구성한 경우 지원 자동 알림 이벤트 목록 표를 참조하십시오.</value></Lang>
-		<Lang><country>pt-br</country> <value>É possível configurar o XClarity Administrator para notificar o Suporte automaticamente (também conhecido como <term>Call Home</term>) caso determinados tipos de erros do <xsl:value-of select="$product"/> sejam encontrados. Caso já tenha configurado essa função, consulte a tabela para obter uma lista de eventos que notificam o Suporte automaticamente.</value></Lang>
-		<Lang><country>ru</country>    <value>XClarity Administrator можно настроить для автоматического уведомления службы поддержки (также называется <term>Call Home</term>) при возникновении определенных типов ошибок <xsl:value-of select="$product"/>. Если вы включили эту функцию, в таблице можно посмотреть список событий, автоматически уведомляющих службу поддержки.</value></Lang>
-		<Lang><country>th</country>    <value>คุณสามารถกำหนดค่า XClarity Administrator เพื่อแจ้งฝ่ายสนับสนุนโดยอัตโนมัติ (หรือที่เรียกว่า    <term>Call Home</term>) หากพบข้อผิดพลาดบางประเภทเกี่ยวกับ <xsl:value-of select="$product"/> หากคุณกำหนดค่าฟังก์ชันนี้แล้ว ให้ดูตารางแสดงรายการเหตุการณ์ที่แจ้งฝ่ายสนับสนุนอัตโนมัติ</value></Lang>
-		<Lang><country>zh-cn</country> <value>可配置 XClarity Administrator，使其在遇到某些类型的 <xsl:value-of select="$product"/> 错误时自动通知支持机构（也称为 <term>Call Home</term >）。如果配置了此功能，请参阅下表以了解会自动通知支持的事件的列表。</value></Lang>
-		<Lang><country>zh_tw</country> <value>您可以配置 XClarity Administrator 在發生某些類型的 <xsl:value-of select="$product"/> 錯誤時，自動通知支援中心（亦稱為 <term>Call Home</term>）。您如有配置此功能，請參閱下表所列，會自動通知支援中心的事件清單。</value></Lang>
+ 		<Lang><country>de</country>    <value>Sie können XClarity Administrator so konfigurieren, dass der Support automatisch benachrichtigt wird (auch als <term>Call-Home-Funktion</term> bezeichnet), wenn bestimmte <Product/>-Fehlertypen auftreten. Wenn Sie diese Funktion konfiguriert haben, finden Sie in der Tabelle eine Liste der Ereignisse, durch die der Support automatisch benachrichtigt wird.</value></Lang>
+		<Lang><country>en</country>    <value>You can configure the XClarity Administrator to automatically notify Support (also known as <i>Call Home</i>) if certain types of <Product/> errors are encountered. If you have configured this function, see the table for a list of events that automatically notify Support.</value></Lang>
+		<Lang><country>es</country>    <value>Puede configurar el XClarity Administrator para notificar automáticamente al centro de soporte (también conocido como <term>Llamar a casa</term>) si se encuentra determinados tipos de errores de <Product/>. Si configuró está función, consulte la tabla para obtener una lista de los sucesos que notifican automáticamente al centro de soporte.</value></Lang>
+		<Lang><country>fr</country>    <value>Vous pouvez configurer XClarity Administrator pour avertir automatiquement le service de support (aussi appelé <term>appel vers Lenovo</term>) si vous rencontrez certains types d'erreur <Product/>. Si vous avez configuré cette fonction, consultez la table pour la liste d'événements qui avertit automatiquement le service de support.</value></Lang>
+		<Lang><country>it</country>    <value>XClarity Administrator può essere configurato in modo da avvisare automaticamente il supporto (funzione nota anche come <term>call home</term>) nel caso in cui si verifichino alcuni tipi di errori di <Product/>. Se questa funzione è stata configurata, fare riferimento alla tabella per conoscere l'elenco di eventi che avvisano automaticamente il supporto.</value></Lang>
+		<Lang><country>ja</country>    <value>特定のタイプの <Product/> エラーが発生した場合に自動的にサポートに通知するよう (<term>コール・ホーム</term> とも呼ばれます)、XClarity Administrator を構成することができます。この機能を構成してある場合、自動的にサポートに通知されるイベントのリストについては、表を参照してください。</value></Lang>
+		<Lang><country>ko</country>    <value>특정 유형의 <Product/> 오류가 발생한 경우 <term>콜 홈</term>이라고도 하는 지원 알림을 자동으로 보내도록 XClarity Administrator를 구성할 수 있습니다. 이 기능을 구성한 경우 지원 자동 알림 이벤트 목록 표를 참조하십시오.</value></Lang>
+		<Lang><country>pt-br</country> <value>É possível configurar o XClarity Administrator para notificar o Suporte automaticamente (também conhecido como <term>Call Home</term>) caso determinados tipos de erros do <Product/> sejam encontrados. Caso já tenha configurado essa função, consulte a tabela para obter uma lista de eventos que notificam o Suporte automaticamente.</value></Lang>
+		<Lang><country>ru</country>    <value>XClarity Administrator можно настроить для автоматического уведомления службы поддержки (также называется <term>Call Home</term>) при возникновении определенных типов ошибок <Product/>. Если вы включили эту функцию, в таблице можно посмотреть список событий, автоматически уведомляющих службу поддержки.</value></Lang>
+		<Lang><country>th</country>    <value>คุณสามารถกำหนดค่า XClarity Administrator เพื่อแจ้งฝ่ายสนับสนุนโดยอัตโนมัติ (หรือที่เรียกว่า    <term>Call Home</term>) หากพบข้อผิดพลาดบางประเภทเกี่ยวกับ <Product/> หากคุณกำหนดค่าฟังก์ชันนี้แล้ว ให้ดูตารางแสดงรายการเหตุการณ์ที่แจ้งฝ่ายสนับสนุนอัตโนมัติ</value></Lang>
+		<Lang><country>zh-cn</country> <value>可配置 XClarity Administrator，使其在遇到某些类型的 <Product/> 错误时自动通知支持机构（也称为 <term>Call Home</term >）。如果配置了此功能，请参阅下表以了解会自动通知支持的事件的列表。</value></Lang>
+		<Lang><country>zh_tw</country> <value>您可以配置 XClarity Administrator 在發生某些類型的 <Product/> 錯誤時，自動通知支援中心（亦稱為 <term>Call Home</term>）。您如有配置此功能，請參閱下表所列，會自動通知支援中心的事件清單。</value></Lang>
    </EventsCallhomeShortdesc>
 
  
@@ -361,10 +380,9 @@ The following values are by these scripts and output files:
    </EventsByCallhome>
 
    
-   
 <!-- 
 ====================================================================
-These might tnot be neeeded. 
+These might not be neeeded. 
 ====================================================================
 --> 
 
