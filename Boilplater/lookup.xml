@@ -117,7 +117,8 @@ If the language is not available, use "en" by default.
 	
 	<Internal>
 		<Lang><country>en</country>    <value>Internal Event</value></Lang>
-    </Internal>
+ 		<Lang><country>zh-cn</country>    <value>內部事件</value></Lang>
+   </Internal>
 
 	<Recoverable>
 		<Lang><country>en</country>    <value>Recoverable</value></Lang>
@@ -202,6 +203,7 @@ If the language is not available, use "en" by default.
  
 	<DateReviewed>
 		<Lang><country>en</country>    <value>Reviewed</value></Lang>
+		<Lang><country>zh-cn</country>    <value>看過</value></Lang>
     </DateReviewed>
 
 

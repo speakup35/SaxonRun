@@ -10,6 +10,11 @@
 <xsl:key name="Serviceable-lookup" match="Serviceable/Lang" use="country"/>
 <xsl:key name="CalledHome-lookup" match="CalledHome/Lang" use="country"/>
 <xsl:key name="UserAction-lookup" match="UserAction/Lang" use="country"/>
+<xsl:key name="No-lookup" match="No/Lang" use="country"/>
+<xsl:key name="Internal-lookup" match="Internal/Lang" use="country"/>
+<xsl:key name="DateReviewed-lookup" match="DateReviewed/Lang" use="country"/>
+<xsl:key name="Informational-lookup" match="Informational/Lang" use="country"/>
+
 <xsl:variable name="message-top" select="document('lookup.xml')/auto_message_text"/>
 
 <xsl:template match="refbody">
@@ -29,24 +34,24 @@
 		  <p><varname>[arg2]</varname>  Server or chassis name</p>
 		</section>
 		<section otherprops="Internal">
-		  <title>Internal Event</title>
-		  <p>No</p>
+		  <title><xsl:value-of select="key('Internal-lookup', $country)/value"/></title>
+		  <p><xsl:value-of select="key('No-lookup', $country)/value"/></p>
 		</section>
 		<section>
 		  <title><xsl:value-of select="key('Severity-lookup', $country)/value"/></title>
-		  <p>Informational</p>
+		  <p><xsl:value-of select="key('Informational-lookup', $country)/value"/></p>
 		</section>
 		<section>
 		  <title><xsl:value-of select="key('Serviceable-lookup', $country)/value"/></title>
-		  <p>No</p>
+		  <p><xsl:value-of select="key('No-lookup', $country)/value"/></p>
 		</section>
 		<section>
 		  <title><xsl:value-of select="key('CalledHome-lookup', $country)/value"/></title>
-		  <p>No</p>
+		  <p><xsl:value-of select="key('No-lookup', $country)/value"/></p>
 		</section>
 		<section><title><xsl:value-of select="key('UserAction-lookup', $country)/value"/></title>Information only; no action is required.</section>
 		<section otherprops="Internal">
-		  <title>Reviewed</title>
+		  <title><xsl:value-of select="key('DateReviewed-lookup', $country)/value"/></title>
 		  <p>4/3/2014</p>
 		</section>
 	  </refbody>
