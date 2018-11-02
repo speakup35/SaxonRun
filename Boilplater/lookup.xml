@@ -79,6 +79,7 @@ If the language is not available, use "en" by default.
 	
     <AlertCategory>
 		<Lang><country>en</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>zh-cn</country>    <value>SNMP Trap ID</value></Lang>
 	</AlertCategory> 
 	
     <SNMPTrapID>
@@ -117,15 +118,17 @@ If the language is not available, use "en" by default.
 	
 	<Internal>
 		<Lang><country>en</country>    <value>Internal Event</value></Lang>
- 		<Lang><country>zh-cn</country>    <value>內部事件</value></Lang>
+ 		<Lang><country>zh-cn</country>    <value>内部事件</value></Lang>
    </Internal>
 
 	<Recoverable>
 		<Lang><country>en</country>    <value>Recoverable</value></Lang>
+		<Lang><country>zh-cn</country>    <value>可回復的</value></Lang>
     </Recoverable>
 
 	<Notifiable>
 		<Lang><country>en</country>    <value>Notifiable</value></Lang>
+		<Lang><country>en</country>    <value>法定报告</value></Lang>
     </Notifiable>
 
 	<Severity>
@@ -145,23 +148,28 @@ If the language is not available, use "en" by default.
 
 	<InternalNotes>
 		<Lang><country>en</country>    <value>Internal Notes</value></Lang>
+		<Lang><country>zh-cn</country>    <value>内部说明</value></Lang>
     </InternalNotes>
 
 	<Example>
 		<Lang><country>en</country>    <value>Example Message</value></Lang>
+		<Lang><country>zh-cn</country>    <value>示例消息</value></Lang>
     </Example>
 
 	<CIMMessageID>
 		<Lang><country>en</country>    <value>CIM Information</value></Lang>
+		<Lang><country>zh-cn</country>    <value>CIM 消息</value></Lang>
     </CIMMessageID>
 
 	<SystemImpact>
 		<Lang><country>en</country>    <value>System Impact</value></Lang>
+		<Lang><country>zh-cn</country>    <value>系統影響</value></Lang>
     </SystemImpact>
 
 	<LEDs>
 		<Lang><country>en</country>    <value>Chassis LED that is Lit</value></Lang>
-    </LEDs>
+ 		<Lang><country>zh-cn</country>    <value>點亮的機箱LED</value></Lang>
+   </LEDs>
 	
 	<CalledHome>
 		<Lang><country>de</country>    <value>Unterstützung automatisch benachrichtigen</value></Lang>
@@ -195,18 +203,20 @@ If the language is not available, use "en" by default.
  
  	<RelatedLinks>
 		<Lang><country>en</country>    <value>Related Links</value></Lang>
+		<Lang><country>zh-cn</country>    <value>相關鏈接</value></Lang>
     </RelatedLinks>
  
 	<DateAdded>
 		<Lang><country>en</country>    <value>Date Message Added</value></Lang>
-    </DateAdded>
+ 		<Lang><country>zh-cn</country>    <value>添加日期消息</value></Lang>
+   </DateAdded>
  
 	<DateReviewed>
 		<Lang><country>en</country>    <value>Reviewed</value></Lang>
 		<Lang><country>zh-cn</country>    <value>看過</value></Lang>
     </DateReviewed>
 
-
+	
 <!-- 
 ====================================================================
 The following values are by these scripts and output files: 
