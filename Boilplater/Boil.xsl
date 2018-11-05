@@ -2,7 +2,7 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output encoding='utf-8' indent='yes'/>
 
-<xsl:param name="country">zh-cn</xsl:param>
+<xsl:param name="country">en</xsl:param>
 <xsl:param name="defaultcn">en</xsl:param>
 <xsl:key name="Arguments-lookup" match="Lang" use="country"/>
 <xsl:variable name="message-top" select="document('lookup.xml')/auto_message_text/Arguments"/>
@@ -17,40 +17,12 @@
 	<xsl:param name="curr-refbody"/>
 	<xsl:variable name="defaulttl" select="key('Arguments-lookup', $defaultcn)/value"/>
 	<xsl:variable name="outtl" select="key('Arguments-lookup', $country)/value"/>
-	<!--
-	<xsl:for-each select="$defaulttl">
-		<def><xsl:value-of select="."/></def>
-	</xsl:for-each>
-	<xsl:for-each select="$outtl">
-		<trans><xsl:value-of select="."/></trans>
-	</xsl:for-each>
-	-->
-	<!--
-	<input><xsl:value-of select="$curr-refbody"/></input>
-	<output><xsl:value-of select="key('Arguments-lookup', $defaultcn)/value"/></output>
-	<xsl:for-each select="key('Arguments-lookup', $defaultcn)/value">
-		<titlel><xsl:value-of select="."/></titlel>
-	</xsl:for-each>
-			
-	<defaulttl><xsl:value-of select="subsequence($defaulttl,index-of($defaulttl, 'Arguments'),index-of($defaulttl, 'Arguments'))"/></defaulttl>
-	<outtl><xsl:value-of select="subsequence($outtl,index-of($defaulttl, 'Arguments'),index-of($defaulttl, 'Arguments'))"/></outtl>
-	-->
 	<xsl:for-each select="$curr-refbody">
 		<xsl:variable name="tagname" select="name()"/>
 		<xsl:variable name="eachtitle" select="index-of($defaulttl, .)"/>
 		<title><xsl:value-of select="."/></title>
-		<!-- xsl:if test=". = subsequence($defaulttl,$eachtitle,$eachtitle)" -->
-			<output><xsl:value-of select="subsequence($outtl,$eachtitle,1)"/></output>
-		<!-- /xsl:if -->
+		<output><xsl:value-of select="subsequence($outtl,$eachtitle,1)"/></output>
 	</xsl:for-each>
-	<!--
-	<lookup>
-		<xsl:value-of select="."/>
-	</lookup>
-	<ref>
-		<xsl:value-of select="$curr-refbody"/>
-	</ref>
-	-->
 </xsl:template>
 
 </xsl:stylesheet>

@@ -1,1 +1,1 @@
-java -jar c:\saxon\saxon9he.jar -t -s:input\FQXHMCP1105I.dita -xsl:Boil.xsl -o:output\result.dita
+java -jar c:\saxon\saxon9he.jar -t -s:input\FQXHMCP1105I.dita -xsl:Boil.xsl -o:output\result.dita country="zh-cn"
