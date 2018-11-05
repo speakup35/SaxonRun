@@ -99,6 +99,7 @@ If the language is not available, use "en" by default.
 	 
     <LogSource>
 		<Lang><country>en</country>    <value>Log Source</value></Lang>
+		<Lang><country>zh-cn</country>    <value>日誌源</value></Lang>
 	</LogSource> 
 	 
 	<Serviceable>
@@ -128,7 +129,7 @@ If the language is not available, use "en" by default.
 
 	<Notifiable>
 		<Lang><country>en</country>    <value>Notifiable</value></Lang>
-		<Lang><country>en</country>    <value>法定报告</value></Lang>
+		<Lang><country>zh-cn</country>    <value>法定报告</value></Lang>
     </Notifiable>
 
 	<Severity>
@@ -213,7 +214,7 @@ If the language is not available, use "en" by default.
  
 	<DateReviewed>
 		<Lang><country>en</country>    <value>Reviewed</value></Lang>
-		<Lang><country>zh-cn</country>    <value>看過</value></Lang>
+		<Lang><country>zh-cn</country>    <value>復審過</value></Lang>
     </DateReviewed>
 
 	

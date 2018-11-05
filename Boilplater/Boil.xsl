@@ -17,12 +17,14 @@
 	<xsl:param name="curr-refbody"/>
 	<xsl:variable name="defaulttl" select="key('Arguments-lookup', $defaultcn)/value"/>
 	<xsl:variable name="outtl" select="key('Arguments-lookup', $country)/value"/>
+	<!--
 	<xsl:for-each select="$defaulttl">
 		<def><xsl:value-of select="."/></def>
 	</xsl:for-each>
 	<xsl:for-each select="$outtl">
 		<trans><xsl:value-of select="."/></trans>
 	</xsl:for-each>
+	-->
 	<!--
 	<input><xsl:value-of select="$curr-refbody"/></input>
 	<output><xsl:value-of select="key('Arguments-lookup', $defaultcn)/value"/></output>
@@ -35,11 +37,11 @@
 	-->
 	<xsl:for-each select="$curr-refbody">
 		<xsl:variable name="tagname" select="name()"/>
-		<xsl:variable name="eachtitle" select="index-of($defaulttl, 'Arguments')"/>
+		<xsl:variable name="eachtitle" select="index-of($defaulttl, .)"/>
 		<title><xsl:value-of select="."/></title>
-		<xsl:if test=". = subsequence($defaulttl,$eachtitle,$eachtitle)">
-			<output><xsl:value-of select="subsequence($outtl,$eachtitle,$eachtitle)"/></output>
-		</xsl:if>
+		<!-- xsl:if test=". = subsequence($defaulttl,$eachtitle,$eachtitle)" -->
+			<output><xsl:value-of select="subsequence($outtl,$eachtitle,1)"/></output>
+		<!-- /xsl:if -->
 	</xsl:for-each>
 	<!--
 	<lookup>
