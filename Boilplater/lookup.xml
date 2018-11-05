@@ -74,12 +74,22 @@ If the language is not available, use "en" by default.
 		<Lang><country>ru</country>    <value>объяснение</value></Lang>
 		<Lang><country>th</country>    <value>คำอธิบาย</value></Lang>
 		<Lang><country>zh-cn</country> <value>说明</value></Lang>
-		<Lang><country>zh_tw</country> <value>說明</value></Lang>
+		<Lang><country>zh_tw</country> <value>説明</value></Lang>
     </Explanation>
 	
     <AlertCategory>
+		<Lang><country>de</country>    <value>SNMP Trap ID</value></Lang>
 		<Lang><country>en</country>    <value>SNMP Trap ID</value></Lang>
-		<Lang><country>zh-cn</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>es</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>fr</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>it</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>ja</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>ko</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>pt-br</country> <value>SNMP Trap ID</value></Lang>
+		<Lang><country>ru</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>th</country>    <value>SNMP Trap ID</value></Lang>
+		<Lang><country>zh-cn</country> <value>SNMP Trap ID</value></Lang>
+		<Lang><country>zh_tw</country> <value>SNMP Trap ID</value></Lang>
 	</AlertCategory> 
 	
     <SNMPTrapID>
@@ -98,8 +108,18 @@ If the language is not available, use "en" by default.
 	</SNMPTrapID>
 	 
     <LogSource>
+		<Lang><country>de</country>    <value>Protokollquelle</value></Lang>
 		<Lang><country>en</country>    <value>Log Source</value></Lang>
-		<Lang><country>zh-cn</country>    <value>日誌源</value></Lang>
+		<Lang><country>es</country>    <value>Fuente de registro</value></Lang>
+		<Lang><country>fr</country>    <value>Source de journal</value></Lang>
+		<Lang><country>it</country>    <value>Log Source</value></Lang>
+		<Lang><country>ja</country>    <value>ログソース</value></Lang>
+		<Lang><country>ko</country>    <value>로그 소스</value></Lang>
+		<Lang><country>pt-br</country> <value>Fonte de Log</value></Lang>
+		<Lang><country>ru</country>    <value>Источник журнала</value></Lang>
+		<Lang><country>th</country>    <value>แหล่งบันทึก</value></Lang>
+		<Lang><country>zh-cn</country> <value>日志源</value></Lang>
+		<Lang><country>zh_tw</country> <value>日誌源</value></Lang>
 	</LogSource> 
 	 
 	<Serviceable>
@@ -118,18 +138,48 @@ If the language is not available, use "en" by default.
     </Serviceable>
 	
 	<Internal>
+		<Lang><country>de</country>    <value>Internes Ereignis</value></Lang>
 		<Lang><country>en</country>    <value>Internal Event</value></Lang>
- 		<Lang><country>zh-cn</country>    <value>内部事件</value></Lang>
-   </Internal>
+		<Lang><country>es</country>    <value>Evento interno</value></Lang>
+		<Lang><country>fr</country>    <value>Événement interne</value></Lang>
+		<Lang><country>it</country>    <value>Evento interno</value></Lang>
+		<Lang><country>ja</country>    <value>内部イベント</value></Lang>
+		<Lang><country>ko</country>    <value>내부 이벤트</value></Lang>
+		<Lang><country>pt-br</country> <value>Evento Interno</value></Lang>
+		<Lang><country>ru</country>    <value>Внутреннее событие</value></Lang>
+		<Lang><country>th</country>    <value>เหตุการณ์ภายใน</value></Lang>
+		<Lang><country>zh-cn</country> <value>内部事件</value></Lang>
+		<Lang><country>zh_tw</country> <value>内部事件</value></Lang>
+  </Internal>
 
 	<Recoverable>
+		<Lang><country>de</country>    <value>wiederherstellbar</value></Lang>
 		<Lang><country>en</country>    <value>Recoverable</value></Lang>
-		<Lang><country>zh-cn</country>    <value>可回復的</value></Lang>
+		<Lang><country>es</country>    <value>recuperable</value></Lang>
+		<Lang><country>fr</country>    <value>restaurable</value></Lang>
+		<Lang><country>it</country>    <value>recuperabile</value></Lang>
+		<Lang><country>ja</country>    <value>回復可能</value></Lang>
+		<Lang><country>ko</country>    <value>복구 할 수있는</value></Lang>
+		<Lang><country>pt-br</country> <value>recuperável</value></Lang>
+		<Lang><country>ru</country>    <value>извлекаемые</value></Lang>
+		<Lang><country>th</country>    <value>กู้คืน</value></Lang>
+		<Lang><country>zh-cn</country> <value>可回复的</value></Lang>
+		<Lang><country>zh_tw</country> <value>可回復的</value></Lang>
     </Recoverable>
 
 	<Notifiable>
+		<Lang><country>de</country>    <value>SNMP Trap ID</value></Lang>
 		<Lang><country>en</country>    <value>Notifiable</value></Lang>
-		<Lang><country>zh-cn</country>    <value>法定报告</value></Lang>
+		<Lang><country>es</country>    <value>De declaración obligatoria</value></Lang>
+		<Lang><country>fr</country>    <value>Notifiable</value></Lang>
+		<Lang><country>it</country>    <value>denuncia</value></Lang>
+		<Lang><country>ja</country>    <value>通知可能</value></Lang>
+		<Lang><country>ko</country>    <value>통지 할 수있는</value></Lang>
+		<Lang><country>pt-br</country> <value>Notificável</value></Lang>
+		<Lang><country>ru</country>    <value>подлежащий регистрации</value></Lang>
+		<Lang><country>th</country>    <value>ที่จะต้องแจ้งให้เจ้าหน้าที่ทราบ</value></Lang>
+		<Lang><country>zh-cn</country> <value>法定报告</value></Lang>
+		<Lang><country>zh_tw</country> <value>法定報告</value></Lang>
     </Notifiable>
 
 	<Severity>
@@ -148,28 +198,78 @@ If the language is not available, use "en" by default.
     </Severity>
 
 	<InternalNotes>
+		<Lang><country>de</country>    <value>Interne Notizen</value></Lang>
 		<Lang><country>en</country>    <value>Internal Notes</value></Lang>
-		<Lang><country>zh-cn</country>    <value>内部说明</value></Lang>
+		<Lang><country>es</country>    <value>Notas internas</value></Lang>
+		<Lang><country>fr</country>    <value>Notes internes</value></Lang>
+		<Lang><country>it</country>    <value>Note interne</value></Lang>
+		<Lang><country>ja</country>    <value>内部ノート</value></Lang>
+		<Lang><country>ko</country>    <value>내부 메모</value></Lang>
+		<Lang><country>pt-br</country> <value>Notas Internas</value></Lang>
+		<Lang><country>ru</country>    <value>Внутренние заметки</value></Lang>
+		<Lang><country>th</country>    <value>บันทึกภายใน</value></Lang>
+		<Lang><country>zh-cn</country> <value>内部说明</value></Lang>
+		<Lang><country>zh_tw</country> <value>内部說明</value></Lang>
     </InternalNotes>
 
 	<Example>
+		<Lang><country>de</country>    <value>Beispielnachricht</value></Lang>
 		<Lang><country>en</country>    <value>Example Message</value></Lang>
-		<Lang><country>zh-cn</country>    <value>示例消息</value></Lang>
+		<Lang><country>es</country>    <value>Mensaje de ejemplo</value></Lang>
+		<Lang><country>fr</country>    <value>Exemple de message</value></Lang>
+		<Lang><country>it</country>    <value>Messaggio di esempio</value></Lang>
+		<Lang><country>ja</country>    <value>メッセージの例</value></Lang>
+		<Lang><country>ko</country>    <value>메시지 예</value></Lang>
+		<Lang><country>pt-br</country> <value>Mensagem de exemplo</value></Lang>
+		<Lang><country>ru</country>    <value>Пример сообщения</value></Lang>
+		<Lang><country>th</country>    <value>ตัวอย่างข้อความ</value></Lang>
+		<Lang><country>zh-cn</country> <value>示例消息</value></Lang>
+		<Lang><country>zh_tw</country> <value>示例消息</value></Lang>
     </Example>
 
 	<CIMMessageID>
+ 		<Lang><country>de</country>    <value>SNMP Trap ID</value></Lang>
 		<Lang><country>en</country>    <value>CIM Information</value></Lang>
-		<Lang><country>zh-cn</country>    <value>CIM 消息</value></Lang>
-    </CIMMessageID>
+		<Lang><country>es</country>    <value>Información CIM</value></Lang>
+		<Lang><country>fr</country>    <value>Informations CIM</value></Lang>
+		<Lang><country>it</country>    <value>Informazioni CIM</value></Lang>
+		<Lang><country>ja</country>    <value>CIM情報</value></Lang>
+		<Lang><country>ko</country>    <value>CIM 정보</value></Lang>
+		<Lang><country>pt-br</country> <value>Informação CIM</value></Lang>
+		<Lang><country>ru</country>    <value>Информация CIM</value></Lang>
+		<Lang><country>th</country>    <value>ข้อมูล CIM</value></Lang>
+		<Lang><country>zh-cn</country> <value>SNMP Trap ID</value></Lang>
+		<Lang><country>zh_tw</country> <value>CIM 消息</value></Lang>
+   </CIMMessageID>
 
 	<SystemImpact>
+		<Lang><country>de</country>    <value>Auswirkungen auf das System</value></Lang>
 		<Lang><country>en</country>    <value>System Impact</value></Lang>
-		<Lang><country>zh-cn</country>    <value>系統影響</value></Lang>
+		<Lang><country>es</country>    <value>Impacto del sistema</value></Lang>
+		<Lang><country>fr</country>    <value>Impact du système</value></Lang>
+		<Lang><country>it</country>    <value>Impatto del sistema</value></Lang>
+		<Lang><country>ja</country>    <value>システムへの影響</value></Lang>
+		<Lang><country>ko</country>    <value>시스템 영향</value></Lang>
+		<Lang><country>pt-br</country> <value>Impacto do sistema</value></Lang>
+		<Lang><country>ru</country>    <value>Воздействие системы</value></Lang>
+		<Lang><country>th</country>    <value>ผลกระทบของระบบ</value></Lang>
+		<Lang><country>zh-cn</country> <value>系统影响</value></Lang>
+		<Lang><country>zh_tw</country> <value>系統影響</value></Lang>
     </SystemImpact>
 
 	<LEDs>
+		<Lang><country>de</country>    <value>Chassis-LED leuchtet</value></Lang>
 		<Lang><country>en</country>    <value>Chassis LED that is Lit</value></Lang>
- 		<Lang><country>zh-cn</country>    <value>點亮的機箱LED</value></Lang>
+		<Lang><country>es</country>    <value>Chasis LED que está encendido</value></Lang>
+		<Lang><country>fr</country>    <value>Voyant de châssis allumé</value></Lang>
+		<Lang><country>it</country>    <value>LED dello chassis acceso</value></Lang>
+		<Lang><country>ja</country>    <value>点灯しているシャーシLED</value></Lang>
+		<Lang><country>ko</country>    <value>켜져있는 섀시 LED</value></Lang>
+		<Lang><country>pt-br</country> <value>LED do chassi que está aceso</value></Lang>
+		<Lang><country>ru</country>    <value>Светодиод шасси, который горит</value></Lang>
+		<Lang><country>th</country>    <value>ไฟแชสซีที่ติดสว่าง</value></Lang>
+		<Lang><country>zh-cn</country> <value>机箱的二极管点亮</value></Lang>
+		<Lang><country>zh_tw</country> <value>機箱的二极管點亮</value></Lang>
    </LEDs>
 	
 	<CalledHome>
@@ -203,18 +303,48 @@ If the language is not available, use "en" by default.
     </UserAction>
  
  	<RelatedLinks>
+ 		<Lang><country>de</country>    <value>ähnliche Links</value></Lang>
 		<Lang><country>en</country>    <value>Related Links</value></Lang>
-		<Lang><country>zh-cn</country>    <value>相關鏈接</value></Lang>
-    </RelatedLinks>
+		<Lang><country>es</country>    <value>enlaces relacionados</value></Lang>
+		<Lang><country>fr</country>    <value>Liens connexes</value></Lang>
+		<Lang><country>it</country>    <value>Link correlati</value></Lang>
+		<Lang><country>ja</country>    <value>関連リンク</value></Lang>
+		<Lang><country>ko</country>    <value>관련된 링크들</value></Lang>
+		<Lang><country>pt-br</country> <value>Links Relacionados</value></Lang>
+		<Lang><country>ru</country>    <value>Ссылки по теме</value></Lang>
+		<Lang><country>th</country>    <value>ลิ้งค์ที่มีความเกี่ยวข้อง</value></Lang>
+		<Lang><country>zh-cn</country> <value>相关链接</value></Lang>
+		<Lang><country>zh_tw</country> <value>相關鏈接</value></Lang>
+   </RelatedLinks>
  
 	<DateAdded>
+		<Lang><country>de</country>    <value>Datum Nachricht hinzugefügt</value></Lang>
 		<Lang><country>en</country>    <value>Date Message Added</value></Lang>
- 		<Lang><country>zh-cn</country>    <value>添加日期消息</value></Lang>
+		<Lang><country>es</country>    <value>Fecha de Mensaje Agregado</value></Lang>
+		<Lang><country>fr</country>    <value>Date d'ajout du message</value></Lang>
+		<Lang><country>it</country>    <value>Data messaggio aggiunto</value></Lang>
+		<Lang><country>ja</country>    <value>追加された日付メッセージ</value></Lang>
+		<Lang><country>ko</country>    <value>추가 된 날짜 메시지</value></Lang>
+		<Lang><country>pt-br</country> <value>Mensagem de data adicionada</value></Lang>
+		<Lang><country>ru</country>    <value>Добавлено сообщение о дате</value></Lang>
+		<Lang><country>th</country>    <value>เพิ่มข้อความวันที่</value></Lang>
+		<Lang><country>zh-cn</country> <value>添加日期消息</value></Lang>
+		<Lang><country>zh_tw</country> <value>添加日期消息</value></Lang>
    </DateAdded>
  
 	<DateReviewed>
+		<Lang><country>de</country>    <value>Bewertet</value></Lang>
 		<Lang><country>en</country>    <value>Reviewed</value></Lang>
-		<Lang><country>zh-cn</country>    <value>復審過</value></Lang>
+		<Lang><country>es</country>    <value>Revisados</value></Lang>
+		<Lang><country>fr</country>    <value>Commenté</value></Lang>
+		<Lang><country>it</country>    <value>Rivisto</value></Lang>
+		<Lang><country>ja</country>    <value>審査</value></Lang>
+		<Lang><country>ko</country>    <value>검토 된</value></Lang>
+		<Lang><country>pt-br</country> <value>Revisado</value></Lang>
+		<Lang><country>ru</country>    <value>Отзыв</value></Lang>
+		<Lang><country>th</country>    <value>Отзыв</value></Lang>
+		<Lang><country>zh-cn</country> <value>复审过</value></Lang>
+		<Lang><country>zh_tw</country> <value>復審過</value></Lang>
     </DateReviewed>
 
 	

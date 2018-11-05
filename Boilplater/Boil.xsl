@@ -4,27 +4,39 @@
 
 <xsl:param name="country">en</xsl:param>
 <xsl:param name="defaultcn">en</xsl:param>
-<xsl:key name="Arguments-lookup" match="Lang" use="country"/>
-<xsl:variable name="message-top" select="document('lookup.xml')/auto_message_text/Arguments"/>
+<xsl:key name="Arguments-lookup" match="m_locale" use="country"/>
+<xsl:variable name="message-top" select="document('lookup.xml')/auto_message_text"/>
 
 <xsl:template match="refbody">
 	<xsl:apply-templates select="$message-top">
-	<xsl:with-param name="curr-refbody" select="section/title"/>
+	<xsl:with-param name="curr-refbody" select="section"/>
 	</xsl:apply-templates> 
 </xsl:template>
 
-<xsl:template match="Arguments">
+<xsl:template match="auto_message_text">
 	<xsl:param name="curr-refbody"/>
 	<xsl:variable name="defaulttl" select="key('Arguments-lookup', $defaultcn)/value"/>
 	<xsl:variable name="outtl" select="key('Arguments-lookup', $country)/value"/>
-	<xsl:for-each select="$curr-refbody">
-		<xsl:variable name="tagname" select="name()"/>
+	<xsl:for-each select="$curr-refbody/title">
 		<xsl:variable name="eachtitle" select="index-of($defaulttl, .)"/>
-		<title><xsl:value-of select="."/></title>
-		<output><xsl:value-of select="subsequence($outtl,$eachtitle,1)"/></output>
+		<!--input><xsl:value-of select="."/></input-->
+		<xsl:if test="$eachtitle > 0">
+			<title><xsl:value-of select="subsequence($outtl,$eachtitle,1)"/></title>
+		</xsl:if>
 	</xsl:for-each>
-</xsl:template>
+	<xsl:for-each select="$curr-refbody/p">
+		<xsl:variable name="eachp" select="index-of($defaulttl, .)"/>
+		<xsl:choose>
+		<xsl:when test="$eachp > 0">
+			<p><xsl:value-of select="subsequence($outtl,$eachp,1)"/></p>
+		</xsl:when>
+		<xsl:otherwise>
+			<p><xsl:value-of select="."/></p>
+		</xsl:otherwise>
+		</xsl:choose>
+	</xsl:for-each>
 
+</xsl:template>
 </xsl:stylesheet>
 
 <!--
@@ -32,17 +44,17 @@
 <xsl:stylesheet version="2.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:output encoding='utf-8' indent='yes'/>
 
-<xsl:param name="country">zh-cn</xsl:param>
+<xsl:param name="country">en</xsl:param>
 
-<xsl:key name="Arguments-lookup" match="Arguments/Lang" use="country"/>
-<xsl:key name="Severity-lookup" match="Severity/Lang" use="country"/>
-<xsl:key name="Serviceable-lookup" match="Serviceable/Lang" use="country"/>
-<xsl:key name="CalledHome-lookup" match="CalledHome/Lang" use="country"/>
-<xsl:key name="UserAction-lookup" match="UserAction/Lang" use="country"/>
-<xsl:key name="No-lookup" match="No/Lang" use="country"/>
-<xsl:key name="Internal-lookup" match="Internal/Lang" use="country"/>
-<xsl:key name="DateReviewed-lookup" match="DateReviewed/Lang" use="country"/>
-<xsl:key name="Informational-lookup" match="Informational/Lang" use="country"/>
+<xsl:key name="Arguments-lookup" match="Arguments/m_locale" use="country"/>
+<xsl:key name="Severity-lookup" match="Severity/m_locale" use="country"/>
+<xsl:key name="Serviceable-lookup" match="Serviceable/m_locale" use="country"/>
+<xsl:key name="CalledHome-lookup" match="CalledHome/m_locale" use="country"/>
+<xsl:key name="UserAction-lookup" match="UserAction/m_locale" use="country"/>
+<xsl:key name="No-lookup" match="No/m_locale" use="country"/>
+<xsl:key name="Internal-lookup" match="Internal/m_locale" use="country"/>
+<xsl:key name="DateReviewed-lookup" match="DateReviewed/m_locale" use="country"/>
+<xsl:key name="Informational-lookup" match="Informational/m_locale" use="country"/>
 
 <xsl:variable name="message-top" select="document('lookup.xml')/auto_message_text"/>
 
